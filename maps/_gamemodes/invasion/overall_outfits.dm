@@ -25,11 +25,11 @@
 /decl/hierarchy/outfit/job/innie_crewmember
 	name = "Insurrectionist Crewmember"
 
-	head = /obj/item/clothing/head/helmet/tactical
+	head = /obj/item/clothing/head/helmet/urf
 	glasses = /obj/item/clothing/glasses/hud/tactical
 	mask = /obj/item/clothing/mask/balaclava/tactical
-	suit = /obj/item/clothing/suit/storage/vest/tactical
-	uniform = /obj/item/clothing/under/tactical
+	suit = /obj/item/clothing/suit/storage/URF
+	uniform = /obj/item/clothing/under/urf
 	shoes = /obj/item/clothing/shoes/tactical
 	l_ear = /obj/item/device/radio/headset/insurrection
 	gloves = /obj/item/clothing/gloves/tactical
@@ -40,11 +40,11 @@
 /decl/hierarchy/outfit/job/innie_crew_captain
 	name = "Insurrectionist Captain"
 
-	head = /obj/item/clothing/head/helmet/tactical/mirania
-	glasses =/obj/item/clothing/glasses/hud/tactical
+	head = /obj/item/clothing/head/helmet/urf
+	glasses = /obj/item/clothing/glasses/hud/tactical
 	mask = /obj/item/clothing/mask/balaclava/tactical
-	suit = /obj/item/clothing/suit/storage/vest/tactical/mirania
-	uniform = /obj/item/clothing/under/tactical
+	suit = /obj/item/clothing/suit/storage/URF
+	uniform = /obj/item/clothing/under/urf
 	shoes = /obj/item/clothing/shoes/tactical
 	l_ear = /obj/item/device/radio/headset/insurrection
 	gloves = /obj/item/clothing/gloves/tactical
