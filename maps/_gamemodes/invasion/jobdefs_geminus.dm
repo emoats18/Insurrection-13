@@ -5,12 +5,8 @@
 		/datum/job/researcher,\
 		/datum/job/ONIGUARD,\
 		/datum/job/ONIGUARDS,\
-		/datum/job/ship_crew_civ.\
-		/datum/job/ship_cap_civ,\
 		/datum/job/ship_crew_innie,\
 		/datum/job/ship_cap_innie,\
-		/datum/job/ship_crew_medic.\
-		/datum/job/ship_cap_medic.\
 		/datum/job/URF_commando,\
 		/datum/job/URF_commando_officer,\
 		/datum/job/unscbertels_co,\
@@ -27,6 +23,10 @@
 		/datum/job/police,\
 		/datum/job/police_chief,\
 		/datum/job/colony_ai,\
+		/datum/job/ship_crew_civ,\
+		/datum/job/ship_cap_civ,\
+		/datum/job/ship_crew_medic,\
+		/datum/job/ship_cap_medic,\
 		/datum/job/covenant/sangheili_minor,\
 		/datum/job/covenant/sangheili_major,\
 		/datum/job/covenant/sangheili_honour_guard,\
