@@ -47,6 +47,6 @@
 	//2 means partial completion
 	return 2
 
-//#include "objectives_cov.dm"
+#include "objectives_cov.dm"
 #include "objectives_innie.dm"
 #include "objectives_unsc.dm"

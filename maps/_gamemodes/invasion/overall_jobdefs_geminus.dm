@@ -7,6 +7,10 @@
 		/datum/job/ONIGUARDS,\
 		/datum/job/ship_crew_innie,\
 		/datum/job/ship_cap_innie,\
+		/datum/job/ship_crew_civ.\
+		/datum/job/ship_cap_civ,\
+		/datum/job/ship_crew_medic.\
+		/datum/job/ship_cap_medic.\
 		/datum/job/URF_commando,\
 		/datum/job/URF_commando_officer,\
 		/datum/job/unscbertels_co,\
@@ -22,8 +26,8 @@
 		/datum/job/colonist_mayor,\
 		/datum/job/police,\
 		/datum/job/police_chief,\
-		/datum/job/colony_ai)
-		//datum/job/covenant/sangheili_minor,\
+		/datum/job/colony_ai,\
+		/datum/job/covenant/sangheili_minor,\
 		/datum/job/covenant/sangheili_major,\
 		/datum/job/covenant/sangheili_honour_guard,\
 		/datum/job/covenant/sangheili_shipmaster,\
@@ -41,15 +45,14 @@
 		DEFAULT_SPAWNPOINT_ID,\
 		"Innie Base Spawns",\
 		"UNSC Base Spawns",\
+		"Covenant Base Spawns",\
 		"Research Facility Spawn",\
 		"Research Facility Director Spawn",\
 		"Research Facility Security Spawn")
-		//"Covenant Base Spawns",\
-		"Research Facility Spawn")
 
 	default_spawn = DEFAULT_SPAWNPOINT_ID
 
-	species_to_job_whitelist = list()//\
+	species_to_job_whitelist = list(\
 		/datum/species/kig_yar = list(/datum/job/covenant/kigyarminor,/datum/job/covenant/kigyarmajor,/datum/job/covenant/kigyarcorvette/captain),\
 		/datum/species/unggoy = list(/datum/job/covenant/unggoy_minor,/datum/job/covenant/unggoy_major),\
 		/datum/species/sangheili = list(/datum/job/covenant/sangheili_minor,/datum/job/covenant/sangheili_major,/datum/job/covenant/sangheili_honour_guard,/datum/job/covenant/sangheili_shipmaster),\
