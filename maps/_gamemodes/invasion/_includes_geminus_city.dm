@@ -3,6 +3,12 @@
 	#include "../../faction_bases/base_areas.dm"
 	#include "../../faction_bases/faction_base.dm"
 	#include "../../faction_bases/faction_spawns.dm"
+	#include "../../faction_bases/faction_base.dm"
+	#include "../../civ_ships/civ_crew_spawns.dm"
+	#include "../../civ_ships/medic_crew_spawns.dm"
+	#include "../../civ_ships/civ_crew_jobs.dm"
+	#include "../../civ_ships/medic_crew_jobs.dm"
+
 
 	#include "../../faction_bases/Covenant_Station.dmm"
 
@@ -34,10 +40,6 @@
 	#include "innie_crew_jobs.dm"
 	#include "innie_crew_spawns.dm"
 	#include "odst_crew_jobs.dm"
-	#include "civ_crew_jobs.dm"
-	#include "civ_crew_spawns.dm"
-	#include "medic_crew_jobs.dm"
-	#include "medic_crew_spawns.dm"
 
 
 	#include "../../civ_ships/CCV_Comet.dm"

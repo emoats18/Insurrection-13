@@ -45,6 +45,10 @@
 		DEFAULT_SPAWNPOINT_ID,\
 		"Innie Base Spawns",\
 		"UNSC Base Spawns",\
+		"Civilian Ship Crew",\
+		"Civ Ship Cap Crew",\
+		"Medical Ship Crew",\
+		"Medical Ship Cap Crew",\
 		"Covenant Base Spawns",\
 		"Research Facility Spawn",\
 		"Research Facility Director Spawn",\
