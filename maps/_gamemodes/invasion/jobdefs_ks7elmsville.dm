@@ -20,8 +20,10 @@
 		/datum/job/bertelsODSTO,\
 		/datum/job/IGUARD,\
 		/datum/job/Emsville_Colonist,\
-		/datum/job/Emsville_Marshall)
-		//datum/job/covenant/sangheili_minor,\
+		/datum/job/Emsville_Marshall,\
+		/datum/job/ship_crew_civ,\
+		/datum/job/ship_cap_civ,\
+		/datum/job/covenant/sangheili_minor,\
 		/datum/job/covenant/sangheili_major,\
 		/datum/job/covenant/sangheili_honour_guard,\
 		/datum/job/covenant/sangheili_shipmaster,\
@@ -39,6 +41,10 @@
 		DEFAULT_SPAWNPOINT_ID,\
 		"Innie Base Spawns",\
 		"UNSC Base Spawns",\
+		"Civilian Ship Crew",\
+		"Civ Ship Cap Crew",\
+		"Medical Ship Crew",\
+		"Medical Ship Cap Crew",\
 		"Covenant Base Spawns",\
 		"Research Facility Spawn",\
 		"Research Facility Director Spawn",\
@@ -46,7 +52,7 @@
 
 	default_spawn = DEFAULT_SPAWNPOINT_ID
 
-	species_to_job_whitelist = list()//\
+	species_to_job_whitelist = list(\
 		/datum/species/kig_yar = list(/datum/job/covenant/kigyarminor,/datum/job/covenant/kigyarmajor,/datum/job/covenant/kigyarcorvette/captain),\
 		/datum/species/unggoy = list(/datum/job/covenant/unggoy_minor,/datum/job/covenant/unggoy_major),\
 		/datum/species/sangheili = list(/datum/job/covenant/sangheili_minor,/datum/job/covenant/sangheili_major,/datum/job/covenant/sangheili_honour_guard,/datum/job/covenant/sangheili_shipmaster),\

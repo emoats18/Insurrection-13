@@ -3,8 +3,13 @@
 	#include "../../faction_bases/base_areas.dm"
 	#include "../../faction_bases/faction_base.dm"
 	#include "../../faction_bases/faction_spawns.dm"
+	#include "../../faction_bases/faction_base.dm"
+	#include "../../civ_ships/civ_crew_spawns.dm"
+	#include "../../civ_ships/medic_crew_spawns.dm"
+	#include "../../civ_ships/civ_crew_jobs.dm"
+	#include "../../civ_ships/medic_crew_jobs.dm"
 
-	//#include "../../faction_bases/Covenant_Station.dmm"
+	#include "../../faction_bases/Covenant_Station.dmm"
 
 	#include "../../faction_bases/Human_Station_1.dmm"
 
@@ -30,7 +35,7 @@
 
 	#include "../../UNSC_Thorin/includes.dm"
 
-	//#include "../../Covenant Corvette/includes.dm"
+	#include "../../Covenant Corvette/includes.dm"
 
 	#include "innie_crew_jobs.dm"
 	#include "innie_crew_spawns.dm"
@@ -38,6 +43,12 @@
 
 	#include "../../civ_ships/CCV_Comet.dm"
 	#include "../../civ_ships/CCV_Comet.dmm"
+	#include "../../civ_ships/CCV_Star.dm"
+	#include "../../civ_ships/CCV_Star.dmm"
+	#include "../../civ_ships/CCV_Slow_But_Steady.dm"
+	#include "../../civ_ships/CCV_Slow_But_Steady.dmm"
+	#include "../../civ_ships/CCV_Deliverance.dm"
+	#include "../../civ_ships/CCV_Deliverance.dmm"
 
 	#include "overall_outfits.dm"
 	#include "mapdef.dm"
