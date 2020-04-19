@@ -7,8 +7,8 @@
 	antag_indicator = "innie"
 	role_text_plural = "Insurrectionist"
 	landmark_id = "Insurrectionist-Spawn"
-	welcome_text = "You are a member of the Insurrectionist forces, down with the UNSC! Use :t to speak to the rest of your rebels."
-	leader_welcome_text = "You are the leader of the Insurrectionist forces, down with the UNSC! Use :t to speak to your underlings."
+	welcome_text = "You are a member of the Insurrectionist Brotherhood Cell. Down with the UNSC! Use :t to speak to the rest of your brothers."
+	leader_welcome_text = "You are the leader of the Insurrectionist forces, down with the UNSC! Use :t to speak to your homicidal freedom fighters."
 	welcome_text = "To speak on your group's private channel use :t."
 	flags = ANTAG_OVERRIDE_JOB | ANTAG_CLEAR_EQUIPMENT | ANTAG_CHOOSE_NAME | ANTAG_HAS_LEADER
 	id_type = /obj/item/weapon/card/id/insurrectionist
