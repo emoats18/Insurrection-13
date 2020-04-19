@@ -3,7 +3,7 @@
 
 /obj/item/clothing/under/unsc/odst_jumpsuit
 	name = "ODST jumpsuit"
-	desc = "standard issue ODST jumpsuits, padded to provide a slight edge."
+	desc = "standard issue ODST jumpsuits. Unlikely to protect against anything more than a splinter."
 	icon = ITEM_INHAND
 	icon_override = ODST_OVERRIDE
 	item_state = "Jumpsuit"
@@ -15,12 +15,12 @@
 		)
 
 /obj/item/clothing/glasses/hud/tactical/odst_hud
-	darkness_view = 4
+	darkness_view = 2 //Used to be 4. Changed to allow more URF strategies in the dark.
 	see_invisible = SEE_INVISIBLE_NOLIGHTING
 
 /obj/item/clothing/head/helmet/odst
 	name = "ODST Rifleman Helmet"
-	desc = "Standard issue short-EVA capable helmet issued to ODST forces"
+	desc = "Standard issue short-EVA capable helmet issued to ODST forces. The visor is easily cracked by ballistics, but is fairly resilient against plasma weaponry."
 	icon = ITEM_INHAND
 	icon_override = ODST_OVERRIDE
 	item_state = "Odst Helmet"
@@ -35,7 +35,7 @@
 	heat_protection = HEAD | FACE
 	min_cold_protection_temperature = SPACE_HELMET_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = FIRE_HELMET_MAX_HEAT_PROTECTION_TEMPERATURE
-	armor = list(melee = 60, bullet = 35, laser = 25,energy = 25, bomb = 20, bio = 100, rad = 25)
+	armor = list(melee = 60, bullet = 30, laser = 60,energy = 60, bomb = 20, bio = 100, rad = 50) //tweaked to be better at fighting covenant then innies. Gives them a specific purpose, instead of just being "better marines"
 	item_icons = list(
 		slot_l_hand_str = null,
 		slot_r_hand_str = null,
@@ -52,12 +52,12 @@
 
 /obj/item/clothing/suit/armor/special/odst
 	name = "ODST Armour"
-	desc = "Lightweight, durable armour issued to Orbital Drop Shock Troopers for increased survivability in the field."
+	desc = "Fairly heavy, durable armour issued to Orbital Drop Shock Troopers for increased survivability in the field. Designed for engaging plasma weaponry, the suit suffers from somewhat weak protection against ballistics,"
 	icon = ITEM_INHAND
 	icon_state = "Odst Armour"
 	icon_override = ODST_OVERRIDE
 	blood_overlay_type = "armor"
-	armor = list(melee = 55, bullet = 50, laser = 55, energy = 45, bomb = 40, bio = 100, rad = 25)
+	armor = list(melee = 60, bullet = 40, laser = 65, energy = 70, bomb = 40, bio = 100, rad = 50)
 	//specials = list(/datum/armourspecials/internal_air_tank/human) This line is disabled untill a dev can fix the internals code for it.
 	item_flags = STOPPRESSUREDAMAGE|THICKMATERIAL
 	body_parts_covered = UPPER_TORSO | LOWER_TORSO | ARMS | LEGS
@@ -70,8 +70,10 @@
 		slot_l_hand_str = null,
 		slot_r_hand_str = null,
 		)
-	armor_thickness = 20
-
+	armor_thickness = 25
+/obj/item/clothing/suit/armor/special/odst/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = 0.5 //for reference, riot armor is 1.0. UNSC are designed to be very defensive in nature, and have much better armor then the URF.
 
 /obj/item/clothing/shoes/magboots/odst
 	name = "ODST Magboots"
