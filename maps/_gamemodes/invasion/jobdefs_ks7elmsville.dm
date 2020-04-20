@@ -45,6 +45,7 @@
 		"Civ Ship Cap Crew",\
 		"Medical Ship Crew",\
 		"Medical Ship Cap Crew",\
+		"Medical Ship Crew CMO",\
 		"Covenant Base Spawns",\
 		"Research Facility Spawn",\
 		"Research Facility Director Spawn",\

@@ -9,7 +9,7 @@
 	#include "../../civ_ships/civ_crew_jobs.dm"
 	#include "../../civ_ships/medic_crew_jobs.dm"
 
-	#include "../../faction_bases/Covenant_Station.dmm"
+	//#include "../../faction_bases/Covenant_Station.dmm"
 
 	#include "../../faction_bases/Human_Station_1.dmm"
 
