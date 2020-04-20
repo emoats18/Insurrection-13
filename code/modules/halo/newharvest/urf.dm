@@ -62,6 +62,7 @@
 	item_icons = list(
 		slot_l_hand_str = 'code/modules/halo/weapons/icons/Weapon_Inhands_left.dmi',
 		slot_r_hand_str = 'code/modules/halo/weapons/icons/Weapon_Inhands_right.dmi',
+		)
 
 /obj/item/weapon/gun/energy/plasmapistol/urf
 	name = "Type-25 Directed Energy Pistol"
@@ -73,16 +74,9 @@
 	charge_meter = 1
 	max_shots = 80
 	slowdown_general = 0
-	var/overcharge = 0
 	projectile_type = /obj/item/projectile/covenant/plasmapistol
 	screen_shake = 0
 	//irradiate_non_cov = 5. Used to be covenant only, but URF version doesn't give rads.
-	var/overcharge_cost = 1
-	sprite_sheets = list(
-		"Tvaoan Kig-Yar" = null,\
-		"Jiralhanae" = null,\
-		"Sangheili" = null\
-		)
 
 /obj/item/weapon/gun/projectile/needler/urf // Uses "magazines" to reload rather than inbuilt cells.
 	name = "Type-33 Guided Munitions Launcher"
@@ -93,9 +87,7 @@
 	slot_flags = SLOT_BELT||SLOT_HOLSTER
 	fire_sound = 'code/modules/halo/sounds/needlerfire.ogg'
 	magazine_type = /obj/item/ammo_magazine/needles
-	handle_casings = CLEAR_CASINGS
 	caliber = "needler"
-	load_method = MAGAZINE
 	burst = 3
 	is_heavy = 1
 	irradiate_non_cov = 2
