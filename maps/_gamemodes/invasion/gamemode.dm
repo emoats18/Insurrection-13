@@ -3,21 +3,21 @@
 #include "oni_cryopod.dm"
 
 /datum/game_mode/invasion
-	name = "Invasion"
+	name = "Insurrection"
 	config_tag = "invasion"
-	round_description = "In an outer colony on the edge of human space, an insurrection is brewing. Meanwhile an alien threat lurks in the void."
-	extended_round_description = "In an outer colony on the edge of human space, an insurrection is brewing. Meanwhile an alien threat lurks in the void."
+	round_description = "In an outer colony on the edge of human space, an insurrection is brewing."
+	extended_round_description = "In an outer colony on the edge of human space, an insurrection is brewing."
 
 	//uncomment this later
 	//required_players = 10
-	factions = list(/datum/faction/unsc, /datum/faction/insurrection, /datum/faction/covenant)
+	factions = list(/datum/faction/unsc, /datum/faction/insurrection)//, /datum/faction/covenant)
 
 	var/faction_safe_time = 10 MINUTES
 	var/faction_safe_duration = 10 MINUTES
 	var/safe_expire_warning = 0
 
-	var/obj/effect/overmap/ship/cov_ship
-	var/list/cov_ship_areas = list()
+	//var/obj/effect/overmap/ship/cov_ship
+	//var/list/cov_ship_areas = list()
 	var/list/unsc_base_areas = list()
 	var/obj/effect/overmap/ship/unsc_ship
 	var/obj/effect/overmap/human_colony
@@ -26,7 +26,7 @@
 	var/list/objectives_slipspace_affected = list()
 	var/list/round_end_reasons = list()
 
-	var/covenant_ship_slipspaced = 0
+	//var/covenant_ship_slipspaced = 0
 
 /datum/game_mode/invasion/New()
 	. = ..()
@@ -40,17 +40,17 @@
 			factions_by_name[new_faction.name] = new_faction
 
 	//setup covenant objectives
-	var/datum/faction/covenant/C = locate() in factions
-	if(C)
-		var/list/objective_types = list(\
-			/datum/objective/protect_cov_ship,\
-			/datum/objective/protect/protect_cov_leader,\
-			/datum/objective/glass_colony,\
-			/datum/objective/steal_ai,\
-			/datum/objective/steal_nav_data,\
+	//var/datum/faction/covenant/C = locate() in factions
+	//if(C)
+		//var/list/objective_types = list(\
+			//datum/objective/protect_cov_ship,\
+			//datum/objective/protect/protect_cov_leader,\
+			//datum/objective/glass_colony,\
+			//datum/objective/steal_ai,\
+			//datum/objective/steal_nav_data,\
 			///datum/objective/destroy_unsc_ship,
-			/datum/objective/retrieve_artifact)
-		setup_faction_objectives(C, objective_types)
+			//datum/objective/retrieve_artifact)
+		//setup_faction_objectives(C, objective_types)
 
 	//setup unsc objectives
 	var/datum/faction/unsc/U = locate() in factions
@@ -78,11 +78,11 @@
 /datum/game_mode/invasion/pre_setup()
 	. = ..()
 	//**** hard code some values which we will locate dynamically later ****//
-	find_cov_ship()
-	find_cov_ship_areas()
+	//find_cov_ship()
+	//find_cov_ship_areas()
 	find_unsc_ship()
 	find_unsc_base_areas()
-	find_human_colony()
+	//find_human_colony()
 	//**** finish hard codes. remove these later ****//
 
 	//setup a couple of other objectives
@@ -99,14 +99,14 @@
 	objectives_specific_target -= successful
 	return 1
 
-/datum/game_mode/invasion/proc/find_cov_ship()
-	var/datum/faction/covenant/C = factions_by_name["Covenant"]
-	cov_ship = C.get_flagship()
+//datum/game_mode/invasion/proc/find_cov_ship()
+	//var/datum/faction/covenant/C = factions_by_name["Covenant"]
+	//cov_ship = C.get_flagship()
 
-/datum/game_mode/invasion/proc/find_cov_ship_areas()
-	for(var/area_type in typesof(cov_ship.parent_area_type))
-		var/area/cur_area = locate(area_type) in world
-		cov_ship_areas.Add(cur_area)
+//datum/game_mode/invasion/proc/find_cov_ship_areas()
+	//for(var/area_type in typesof(cov_ship.parent_area_type))
+		//var/area/cur_area = locate(area_type) in world
+		//cov_ship_areas.Add(cur_area)
 
 /datum/game_mode/invasion/proc/find_unsc_ship()
 	var/datum/faction/unsc/U = factions_by_name["UNSC"]
@@ -147,13 +147,13 @@
 	round_end_reasons = list()
 
 	//the cov ship has been destroyed or gone to slipspace
-	if(!cov_ship)
-		if(covenant_ship_slipspaced)
-			round_end_reasons += "the Covenant ship has gone to slipspace and left the system"
-			var/datum/faction/covenant/C = locate() in factions
-			C.ignore_players_dead = 1
-		else
-			round_end_reasons += "the Covenant ship has been destroyed"
+	//if(!cov_ship)
+		//if(covenant_ship_slipspaced)
+			//round_end_reasons += "the Covenant ship has gone to slipspace and left the system"
+			//var/datum/faction/covenant/C = locate() in factions
+			//C.ignore_players_dead = 1
+		//else
+			//round_end_reasons += "the Covenant ship has been destroyed"
 
 	//the UNSC ship has been destroyed
 	if(!unsc_ship)
@@ -163,8 +163,8 @@
 	if(human_colony)
 		if(human_colony.nuked)
 			round_end_reasons += "the human colony has been nuked"
-		if(human_colony.glassed)
-			round_end_reasons += "the human colony has been glassed"
+		//if(human_colony.glassed)
+			//round_end_reasons += "the human colony has been glassed"
 
 	//if all faction players have been killed/captured... only check 1 faction
 	var/factions_destroyed = 0
@@ -329,17 +329,17 @@
 				F.living_minds -= M.mind
 				break
 
-/datum/game_mode/invasion/handle_slipspace_jump(var/obj/effect/overmap/ship/ship)
-	if(ship.faction == "Covenant")
+//datum/game_mode/invasion/handle_slipspace_jump(var/obj/effect/overmap/ship/ship)
+	//if(ship.faction == "Covenant")
 		//record a round end condition
-		covenant_ship_slipspaced = 1
+		//covenant_ship_slipspaced = 1
 
 		//lock in any covenant objectives now so they arent failed by the ship despawning
-		for(var/datum/objective/objective in objectives_slipspace_affected)
+		//for(var/datum/objective/objective in objectives_slipspace_affected)
 
 			//a 1 here means the objective was successful
-			objective.override = objective.check_completion()
+			//objective.override = objective.check_completion()
 
 			//a 0 means it fails so we set -1 to lock in a 0 result
-			if(!objective.override)
-				objective.override = -1
+			//if(!objective.override)
+				//objective.override = -1
