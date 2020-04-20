@@ -19,14 +19,14 @@
 /area/faction_base/unsc_shuttle
 	name = "UNSC Shuttle"
 
-/area/faction_base/cov
-	name = "Covenant Faction Base"
+//area/faction_base/cov
+	//name = "Covenant Faction Base"
 
-/area/faction_base/cov_defense_platform
-	name = "Covenant Defense Platform"
+//area/faction_base/cov_defense_platform
+	//name = "Covenant Defense Platform"
 
-/area/faction_base/covenant_shuttle
-	name = "Covenant Shuttle"
+//area/faction_base/covenant_shuttle
+	//name = "Covenant Shuttle"
 
 /area/faction_base/innie
 	name = "Insurrectionist Faction Base"

@@ -3,12 +3,12 @@
 	title = "Civilian Ship Crew"
 	total_positions = 7
 	spawn_positions = 7
-	outfit_type = /decl/hierarchy/outfit/job/civ_crewmember
+	outfit_type = /decl/hierarchy/outfit/job/ship_crew_civ
 	selection_color = "#000000"
 	spawnpoint_override = "Civilian Ship Crew"
 	alt_titles = list(\
 	"Civilian Ship Technician",
-	"Civilian Ship Medic",
+	"Civilian Ship Doctor",
 	"Civilian Ship Engineer",
 	"Civilian Ship Security")
 
@@ -16,7 +16,7 @@
 	title = "Civilian Ship Captain"
 	total_positions = 2
 	spawn_positions = 2
-	outfit_type = /decl/hierarchy/outfit/job/civ_captain
+	outfit_type = /decl/hierarchy/outfit/job/ship_cap_civ
 	selection_color = "#000000"
 	spawnpoint_override = "Civ Ship Cap Crew"
 
