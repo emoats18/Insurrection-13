@@ -36,13 +36,13 @@
 				spawn_locs += t
 			om.forceMove(pick(spawn_locs))
 
-/obj/effect/overmap/ship/faction_base/cov
-	name = "Vanguard's Mantle"
-	icon_state = "base_cov"
-	faction = "Covenant"
-	defense_type = /obj/effect/overmap/ship/npc_ship/automated_defenses/cov
-	ships_spawnnear = list("SDV Vindictive Infraction","Kig-Yar Raider","Kig-Yar Missionary Vessel")
-	base = 1
+///obj/effect/overmap/ship/faction_base/cov
+	//name = "Vanguard's Mantle"
+	//icon_state = "base_cov"
+	//faction = "Covenant"
+	//defense_type = /obj/effect/overmap/ship/npc_ship/automated_defenses/cov
+	//ships_spawnnear = list("SDV Vindictive Infraction","Kig-Yar Raider","Kig-Yar Missionary Vessel")
+	//base = 1
 
 /obj/effect/overmap/ship/faction_base/unsc
 	name = "Deviance Station"

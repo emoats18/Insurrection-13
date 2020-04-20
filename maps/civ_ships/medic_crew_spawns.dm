@@ -31,3 +31,20 @@ GLOBAL_LIST_EMPTY(ship_cap_medic_spawns)
 /obj/effect/landmark/start/ship_cap_medic/New()
 	..()
 	GLOB.ship_cap_medic_spawns += loc
+
+
+GLOBAL_LIST_EMPTY(medic_cmo_spawns)
+
+/datum/spawnpoint/medic_cmo
+	display_name = "Medical Ship Crew CMO"
+	restrict_job = list("Medical Ship Chief Medical Officer")
+/datum/spawnpoint/medic_cmo/New()
+	..()
+	turfs = GLOB.medic_cmo_spawns
+
+/obj/effect/landmark/start/medic_cmo
+	name = "Medical Ship CMO"
+
+/obj/effect/landmark/start/medic_cmo/New()
+	..()
+	GLOB.medic_cmo_spawns += loc

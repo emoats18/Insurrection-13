@@ -52,17 +52,54 @@
 
 	flags = 0
 
-/decl/hierarchy/outfit/job/civ_crewmember
+/decl/hierarchy/outfit/job/ship_crew_civ
 	name = "Civilian Ship Crewmember"
 
 	pda_slot = null
 
 	flags = 0
 
-/decl/hierarchy/outfit/job/civ_captain
+/decl/hierarchy/outfit/job/ship_cmo_medic
+	name = "Medical Ship Chief Medical Officer"
+
+	uniform = /obj/item/clothing/under/rank/chief_medical_officer
+	suit = /obj/item/clothing/suit/storage/toggle/labcoat/cmo
+	shoes = /obj/item/clothing/shoes/dutyboots
+	id_type = /obj/item/weapon/card/id/medical/head
+	pda_slot = /obj/item/device/pda/heads/cmo
+	backpack = /obj/item/weapon/storage/backpack/satchel_med
+
+	flags = 0
+
+/decl/hierarchy/outfit/job/ship_crew_medic
+	name = "Medical Ship Crewmember"
+	uniform = /obj/item/clothing/under/rank/medical
+	suit = /obj/item/clothing/suit/storage/toggle/labcoat
+	pda_slot = null
+	backpack = /obj/item/weapon/storage/backpack/satchel_med
+
+	flags = 0
+
+/decl/hierarchy/outfit/job/ship_cap_medic
+	name = "Medical Ship Captain"
+
+	glasses = /obj/item/clothing/glasses/sunglasses
+	uniform = /obj/item/clothing/under/utility/expeditionary/officer/command
+	shoes = /obj/item/clothing/shoes/dutyboots
+	head = /obj/item/clothing/head/soft/sol/expedition/co
+	id_type = /obj/item/weapon/card/id/gold
+	backpack = /obj/item/weapon/storage/backpack/satchel_cap
+	pda_slot = /obj/item/device/pda/captain
+
+	flags = 0
+
+/decl/hierarchy/outfit/job/ship_cap_civ
 	name = "Civilian Ship Captain"
 
-	head = /obj/item/clothing/head/collectable/petehat
+	uniform = /obj/item/clothing/under/rank/captain
+	shoes = /obj/item/clothing/shoes/dutyboots
+	head = /obj/item/clothing/head/caphat
+	id_type = /obj/item/weapon/card/id/gold
 
 	pda_slot = null
 	flags = 0
