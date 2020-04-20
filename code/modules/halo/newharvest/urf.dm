@@ -47,8 +47,8 @@
 	name = "Type-25 Directed Energy Rifle"
 	desc = "Also known as the \"Plasma Rifle\", this weapon fires 3-shot bursts of superheated plasma.It has been modified by the URF Commandos to be more wieldy for human use, with additional spikes."
 	icon = 'code/modules/halo/newharvest/newharvest.dmi'
-	icon_state = "Plasma Rifle"
-	item_state = "URFplasrifle"
+	icon_state = "URFplasrifle"
+	item_state = "plasmarifle"
 	slot_flags = SLOT_BELT|SLOT_HOLSTER|SLOT_POCKET|SLOT_BACK
 	fire_sound = 'code/modules/halo/sounds/plasrifle3burst.ogg'
 	charge_meter = 1
@@ -68,7 +68,7 @@
 	name = "Type-25 Directed Energy Pistol"
 	desc = "A dual funtionality pistol: It fires bolts of plasma, and when overcharged is capable of emitting a small emp burst at the point of impact.It has been modified by the URF Commandos to be more wieldy for human use, with additional spikes."
 	icon = 'code/modules/halo/icons/Covenant Weapons.dmi'
-	icon_state = "Plasma Pistol"
+	icon_state = "URFplaspistol"
 	slot_flags = SLOT_BELT|SLOT_HOLSTER|SLOT_POCKET|SLOT_BACK
 	fire_sound = 'code/modules/halo/sounds/haloplasmapistol.ogg'
 	charge_meter = 1
@@ -82,13 +82,13 @@
 	name = "Type-33 Guided Munitions Launcher"
 	desc = "This weapon fire razor-sharp crystalline shards which can explode violently when embedded into targets. It has been modified by the URF Commandos to be more wieldy for human use, with additional spikes."
 	icon = 'code/modules/halo/icons/Covenant Weapons.dmi'
-	icon_state = "Needler"
-	item_state = "URFneedler"
+	icon_state = "URFneedler"
+	item_state = "needler"
 	slot_flags = SLOT_BELT||SLOT_HOLSTER
 	fire_sound = 'code/modules/halo/sounds/needlerfire.ogg'
 	magazine_type = /obj/item/ammo_magazine/needles
 	caliber = "needler"
 	burst = 3
 	is_heavy = 1
-	irradiate_non_cov = 2
+	//irradiate_non_cov = 2
 	slowdown_general = 0
