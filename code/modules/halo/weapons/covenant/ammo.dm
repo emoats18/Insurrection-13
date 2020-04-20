@@ -18,13 +18,13 @@
 	icon_state = "Trainingpistol Shot"
 
 /obj/item/projectile/covenant/plasmapistol
-	damage = 45
+	damage = 25
 	accuracy = 1
 	icon = 'code/modules/halo/icons/Covenant_Projectiles.dmi'
 	icon_state = "Plasmapistol Shot"
 
 /obj/item/projectile/covenant/plasmapistol/overcharge
-	damage = 60
+	damage = 50
 	icon_state = "Overcharged_Plasmapistol shot"
 
 /obj/item/projectile/covenant/plasmapistol/overcharge/on_impact()
@@ -32,7 +32,7 @@
 	empulse(src.loc,1,2)
 
 /obj/item/projectile/covenant/plasmarifle
-	damage = 35 // more damage than MA5B.
+	damage = 25 //damage reduced for balanced URF use
 	accuracy = 1
 	icon = 'code/modules/halo/icons/Covenant_Projectiles.dmi'
 	icon_state = "Plasmarifle Shot"
@@ -90,7 +90,7 @@
 /obj/item/projectile/bullet/covenant/needles
 	name = "Needle"
 	desc = "A sharp, pink crystalline shard"
-	damage = 20 // Low damage, special effect would do the most damage.
+	damage = 20 // Pistol level damage. Supercombine is what kills, mainly
 	accuracy = 1
 	icon = 'code/modules/halo/icons/Covenant_Projectiles.dmi'
 	icon_state = "Needler Shot"
