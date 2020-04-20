@@ -56,17 +56,21 @@
 	icon_state = "M52B Body Armor regular"
 	blood_overlay_type = "armor"
 	body_parts_covered = ARMS|UPPER_TORSO|LOWER_TORSO
-	armor = list(melee = 50, bullet = 45, laser = 40, energy = 40, bomb = 35, bio = 0, rad = 0)
+	armor = list(melee = 50, bullet = 45, laser = 40, energy = 30, bomb = 35, bio = 0, rad = 0)
 	var/slots = 4
 	var/max_w_class = ITEM_SIZE_SMALL
-	armor_thickness = 20
+	armor_thickness = 25
 	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/weapon/flame/lighter)
 	starting_accessories = /obj/item/clothing/accessory/holster/hip
+
+/obj/item/clothing/suit/storage/marine/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = 0.5 //for reference, riot armor is 1.0. UNSC are designed to be very defensive in nature, and have much better armor then the URF.
 
 /obj/item/clothing/suit/storage/marine/military_police
 	name = "M52B Body Armor NavSec"
 	desc = "An armored protective vest worn by the members of the UNSC Marine Corps. This one is modified for the use of naval security officers."
-	armor = list(melee = 50, bullet = 50, laser = 40, energy = 40, bomb = 35, bio = 0, rad = 0)
+	armor = list(melee = 70, bullet = 40, laser = 30, energy = 40, bomb = 35, bio = 0, rad = 0) //No slowdown, but worse stats. Designed for dealing with civillians and rogue marines.
 	armor_thickness = 20
 
 /obj/item/clothing/suit/storage/marine/medic
@@ -104,7 +108,7 @@
 	icon = 'code/modules/halo/clothing/marine_items.dmi'
 	icon_state = "UNSC Marine Ammo Belt item"
 	item_state = "UNSC Marine Ammo Belt"
-	storage_slots = 6
+	storage_slots = 8
 
 	can_hold = list(/obj/item/ammo_magazine,/obj/item/ammo_box,/obj/item/weapon/grenade/frag/m9_hedp,/obj/item/weapon/grenade/smokebomb,/obj/item/weapon/grenade/chem_grenade/incendiary)
 
@@ -116,7 +120,7 @@
 	icon_override = MARINE_OVERRIDE
 	icon_state = "UNSC Marine Medical Belt item"
 	item_state = "UNSC Marine Medical Belt"*/
-	storage_slots = 5
+	storage_slots = 8
 
 	can_hold = list(/obj/item/ammo_magazine/m5,/obj/item/ammo_magazine/m127_saphp,/obj/item/ammo_magazine/m127_saphe,/obj/item/weapon/storage/firstaid/unsc)
 
@@ -142,7 +146,7 @@
 	item_state = "salvage_void"
 	w_class = ITEM_SIZE_HUGE
 	allowed = list(/obj/item/weapon/gun,/obj/item/ammo_magazine,/obj/item/weapon/tank)
-	armor = list(melee = 60, bullet = 30, laser = 60, energy = 25, bomb = 30, bio = 100, rad = 100)
+	armor = list(melee = 60, bullet = 10, laser = 60, energy = 25, bomb = 30, bio = 100, rad = 100) //Designed for repairing hulls, not combat
 
 /obj/item/clothing/head/helmet/space/void/unsc
 	name = "\improper Salvage Helmet"
@@ -212,10 +216,14 @@
 	icon_state = "body"
 	item_flags = STOPPRESSUREDAMAGE|AIRTIGHT
 	siemens_coefficient = 0.6
-	armor_thickness = 20
+	armor_thickness = 25
 	w_class = ITEM_SIZE_HUGE
 	allowed = list(/obj/item/weapon/gun,/obj/item/ammo_magazine,/obj/item/weapon/tank)
-	armor = list(melee = 55, bullet = 40, laser = 25, energy = 25, bomb = 30, bio = 100, rad = 100)
+	armor = list(melee = 50, bullet = 40, laser = 25, energy = 25, bomb = 30, bio = 100, rad = 100) //Slightly worse stats then regualr UNSC armor, but spaceproof
+
+/obj/item/clothing/suit/spaceeva/eva/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = 1 //Same slowdown as riot armor. The slowdown is mostly negated in space, where this suit is intended to be used in.
 
 /obj/item/clothing/head/helmet/eva/marine
 	name = "\improper EVA Marine Helmet"
@@ -227,7 +235,7 @@
 	item_state = "eva"
 	icon_state = "eva"
 	item_flags = STOPPRESSUREDAMAGE|AIRTIGHT
-	armor = list(melee = 55, bullet = 25, laser = 55,energy = 25, bomb = 15, bio = 100, rad = 50)
+	armor = list(melee = 50, bullet = 25, laser = 55,energy = 25, bomb = 15, bio = 100, rad = 50)
 	max_heat_protection_temperature = FIRE_HELMET_MAX_HEAT_PROTECTION_TEMPERATURE
 
 	integrated_hud = /obj/item/clothing/glasses/hud/tactical
