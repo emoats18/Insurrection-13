@@ -6,6 +6,11 @@
 	outfit_type = /decl/hierarchy/outfit/job/civ_crewmember
 	selection_color = "#000000"
 	spawnpoint_override = "Civilian Ship Crew"
+	alt_titles = list(\
+	"Civilian Ship Technician",
+	"Civilian Ship Medic",
+	"Civilian Ship Engineer",
+	"Civilian Ship Security")
 
 /datum/job/ship_cap_civ
 	title = "Civilian Ship Captain"
