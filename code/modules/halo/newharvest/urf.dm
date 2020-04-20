@@ -42,3 +42,61 @@
 /obj/item/clothing/suit/storage/URF/New()
 	..()
 	slowdown_per_slot[slot_wear_suit] = 0
+
+/obj/item/weapon/gun/energy/plasmarifle/urf
+	name = "Type-25 Directed Energy Rifle"
+	desc = "Also known as the \"Plasma Rifle\", this weapon fires 3-shot bursts of superheated plasma.It has been modified by the URF Commandos to be more wieldy for human use, with additional spikes."
+	icon = 'code/modules/halo/newharvest/newharvest.dmi'
+	icon_state = "Plasma Rifle"
+	item_state = "URFplasrifle"
+	slot_flags = SLOT_BELT|SLOT_HOLSTER|SLOT_POCKET|SLOT_BACK
+	fire_sound = 'code/modules/halo/sounds/plasrifle3burst.ogg'
+	charge_meter = 1
+	max_shots = 120 //Less shots, more damage. Exactly 40 bursts.
+	burst = 3
+	projectile_type = /obj/item/projectile/covenant/plasmarifle
+	screen_shake = 0
+	is_heavy = 1
+	fire_delay = 10 //4 more ticks than usual
+	dispersion=list(0.0, 0.6, 0.8)
+	item_icons = list(
+		slot_l_hand_str = 'code/modules/halo/weapons/icons/Weapon_Inhands_left.dmi',
+		slot_r_hand_str = 'code/modules/halo/weapons/icons/Weapon_Inhands_right.dmi',
+
+/obj/item/weapon/gun/energy/plasmapistol/urf
+	name = "Type-25 Directed Energy Pistol"
+	desc = "A dual funtionality pistol: It fires bolts of plasma, and when overcharged is capable of emitting a small emp burst at the point of impact.It has been modified by the URF Commandos to be more wieldy for human use, with additional spikes."
+	icon = 'code/modules/halo/icons/Covenant Weapons.dmi'
+	icon_state = "Plasma Pistol"
+	slot_flags = SLOT_BELT|SLOT_HOLSTER|SLOT_POCKET|SLOT_BACK
+	fire_sound = 'code/modules/halo/sounds/haloplasmapistol.ogg'
+	charge_meter = 1
+	max_shots = 80
+	slowdown_general = 0
+	var/overcharge = 0
+	projectile_type = /obj/item/projectile/covenant/plasmapistol
+	screen_shake = 0
+	//irradiate_non_cov = 5. Used to be covenant only, but URF version doesn't give rads.
+	var/overcharge_cost = 1
+	sprite_sheets = list(
+		"Tvaoan Kig-Yar" = null,\
+		"Jiralhanae" = null,\
+		"Sangheili" = null\
+		)
+
+/obj/item/weapon/gun/projectile/needler/urf // Uses "magazines" to reload rather than inbuilt cells.
+	name = "Type-33 Guided Munitions Launcher"
+	desc = "This weapon fire razor-sharp crystalline shards which can explode violently when embedded into targets. It has been modified by the URF Commandos to be more wieldy for human use, with additional spikes."
+	icon = 'code/modules/halo/icons/Covenant Weapons.dmi'
+	icon_state = "Needler"
+	item_state = "URFneedler"
+	slot_flags = SLOT_BELT||SLOT_HOLSTER
+	fire_sound = 'code/modules/halo/sounds/needlerfire.ogg'
+	magazine_type = /obj/item/ammo_magazine/needles
+	handle_casings = CLEAR_CASINGS
+	caliber = "needler"
+	load_method = MAGAZINE
+	burst = 3
+	is_heavy = 1
+	irradiate_non_cov = 2
+	slowdown_general = 0
