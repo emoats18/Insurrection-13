@@ -49,6 +49,7 @@
 	icon = 'code/modules/halo/newharvest/newharvest.dmi'
 	icon_state = "URFplasrifle"
 	item_state = "plasmarifle"
+	icon_override = 'code/modules/halo/newharvest/newharvest.dmi'
 	slot_flags = SLOT_BELT|SLOT_HOLSTER|SLOT_POCKET|SLOT_BACK
 	fire_sound = 'code/modules/halo/sounds/plasrifle3burst.ogg'
 	charge_meter = 1
@@ -69,6 +70,7 @@
 	desc = "A dual funtionality pistol: It fires bolts of plasma, and when overcharged is capable of emitting a small emp burst at the point of impact.It has been modified by the URF Commandos to be more wieldy for human use, with additional spikes."
 	icon = 'code/modules/halo/icons/Covenant Weapons.dmi'
 	icon_state = "URFplaspistol"
+	icon_override = 'code/modules/halo/newharvest/newharvest.dmi'
 	slot_flags = SLOT_BELT|SLOT_HOLSTER|SLOT_POCKET|SLOT_BACK
 	fire_sound = 'code/modules/halo/sounds/haloplasmapistol.ogg'
 	charge_meter = 1
@@ -84,6 +86,7 @@
 	icon = 'code/modules/halo/icons/Covenant Weapons.dmi'
 	icon_state = "URFneedler"
 	item_state = "needler"
+	icon_override = 'code/modules/halo/newharvest/newharvest.dmi'
 	slot_flags = SLOT_BELT||SLOT_HOLSTER
 	fire_sound = 'code/modules/halo/sounds/needlerfire.ogg'
 	magazine_type = /obj/item/ammo_magazine/needles
