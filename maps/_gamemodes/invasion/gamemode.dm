@@ -57,12 +57,8 @@
 	if(U)
 		var/list/objective_types = list(\
 			/datum/objective/protect_unsc_ship,\
-			/datum/objective/retrieve_artifact/unsc,\
 			/datum/objective/protect/protect_unsc_leader,\
 			/datum/objective/capture_innies,\
-			/datum/objective/steal_ai/cole_protocol,\
-			/datum/objective/steal_nav_data/cole_protocol,\
-			/datum/objective/destroy_cov_ship,\
 			/datum/objective/protect_colony)
 		setup_faction_objectives(U, objective_types)
 
@@ -75,8 +71,7 @@
 			/datum/objective/assassinate/kill_unsc_leader,\
 			///datum/objective/recruit_pirates,
 			///datum/objective/recruit_scientists,
-			/datum/objective/protect_colony/innie,\
-			/datum/objective/destroy_cov_ship/innie)
+			/datum/objective/protect_colony/innie)
 			///datum/objective/takeover_colony)
 		setup_faction_objectives(I, objective_types)
 

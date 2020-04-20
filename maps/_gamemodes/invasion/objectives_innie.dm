@@ -54,13 +54,13 @@
 			return 1
 	return 0
 
-/datum/objective/protect_colony/innie
+datum/objective/protect_colony/innie
 	short_text = "Protect the human colony"
-	explanation_text = "Earth has abandoned us, but we will never stop fighting. Someone has to save these civilians."
+	explanation_text = "Earth has abandoned us, but we will never stop fighting. We cannot allow another Far Isle!"
 
-/datum/objective/destroy_cov_ship/innie
-	short_text = "Destroy the Covenant warship"
-	explanation_text = "Soon to be nothing but high tech scrap."
+//datum/objective/destroy_cov_ship/innie
+	//short_text = "Destroy the Covenant warship"
+	//explanation_text = "Soon to be nothing but high tech scrap."
 
 /datum/objective/protect/protect_innie_leader
 	short_text = "Protect the Insurrectionist commander"

@@ -39,49 +39,49 @@
 	return 0
 
 //see objectives_cov.dm
-/datum/objective/steal_nav_data/cole_protocol
-	short_text = "Do not allow Covenant capture of human nav data"
-	explanation_text = "We lose more colonies every year. Soon Earth will be all we have left. Do not allow navchips to be captured by the Covenant."
-	points_per_nav = 60
-	slipspace_affected = 1
+//datum/objective/steal_nav_data/cole_protocol
+	//short_text = "Do not allow Covenant capture of human nav data"
+	//explanation_text = "We lose more colonies every year. Soon Earth will be all we have left. Do not allow navchips to be captured by the Covenant."
+	//points_per_nav = 60
+	//slipspace_affected = 1
 
-/datum/objective/steal_nav_data/cole_protocol/check_completion()
-	if(override > 0)
-		return 1
-	else if(override < 0)
-		return 0
+//datum/objective/steal_nav_data/cole_protocol/check_completion()
+	//if(override > 0)
+		//return 1
+	//else if(override < 0)
+		//return 0
 
-	. = ..()
+	//. = ..()
 
-	lose_points = win_points
-	win_points = 0
+	//lose_points = win_points
+	//win_points = 0
 
-	return !.
+	//return !.
 
-/datum/objective/steal_nav_data/cole_protocol/get_win_points()
-	return 0
+//datum/objective/steal_nav_data/cole_protocol/get_win_points()
+	//return 0
 
-/datum/objective/steal_ai/cole_protocol
-	points_per_ai = 200
-	short_text = "Do not allow Covenant capture of UNSC AI"
-	explanation_text = "Destruction or capture of shipboard AI is absolutely unacceptable. They'll learn everything: weapons research, force deployments, Earth."
-	slipspace_affected = 1
+//datum/objective/steal_ai/cole_protocol
+	//points_per_ai = 200
+	//short_text = "Do not allow Covenant capture of UNSC AI"
+	//explanation_text = "Destruction or capture of shipboard AI is absolutely unacceptable. They'll learn everything: weapons research, force deployments, Earth."
+	//slipspace_affected = 1
 
-/datum/objective/steal_ai/cole_protocol/check_completion()
-	if(override > 0)
-		return 1
-	else if(override < 0)
-		return 0
+//datum/objective/steal_ai/cole_protocol/check_completion()
+	//if(override > 0)
+		//return 1
+	//else if(override < 0)
+		//return 0
 
-	. = ..()
+	//. = ..()
 
-	lose_points = win_points
-	win_points = 0
+	//lose_points = win_points
+	//win_points = 0
 
-	return !.
+	//return !.
 
-/datum/objective/steal_ai/cole_protocol/get_win_points()
-	return 0
+//datum/objective/steal_ai/cole_protocol/get_win_points()
+	//return 0
 
 //todo: oni agent job role
 
@@ -101,22 +101,22 @@
 
 	return win_points > 0
 
-/datum/objective/retrieve_artifact/unsc
-	short_text = "Secure the alien artifact"
-	explanation_text = "ONI reports a high value unidentified alien artifact in the sector. It must be secured by the UNSC to prevent falling into the wrong hands."
+//datum/objective/retrieve_artifact/unsc
+	//short_text = "Secure the alien artifact"
+	//explanation_text = "ONI reports a high value unidentified alien artifact in the sector. It must be secured by the UNSC to prevent falling into the wrong hands."
 
-/datum/objective/retrieve_artifact/unsc/check_completion()
-	var/datum/game_mode/invasion/game_mode = ticker.mode
-	if(istype(game_mode))
-		for(var/area/area in game_mode.unsc_base_areas)
-			for(var/obj/machinery/artifact/A in area)
-				artifacts_recovered += 1
+//datum/objective/retrieve_artifact/unsc/check_completion()
+	//var/datum/game_mode/invasion/game_mode = ticker.mode
+	//if(istype(game_mode))
+		//for(var/area/area in game_mode.unsc_base_areas)
+			//for(var/obj/machinery/artifact/A in area)
+				//artifacts_recovered += 1
 
-	win_points = artifacts_recovered * points_per_artifact
+	//win_points = artifacts_recovered * points_per_artifact
 
-	return artifacts_recovered > 0
+	//return artifacts_recovered > 0
 
-/datum/objective/protect_colony
+datum/objective/protect_colony
 	short_text = "Protect the UEG colony"
 	explanation_text = "There are a million innocent civilians on that colony. Prevent its destruction by any means necessary."
 	lose_points = 100
@@ -128,24 +128,24 @@
 			return 0
 	return 1
 
-/datum/objective/destroy_cov_ship
-	short_text = "Destroy the Covenant warship"
-	explanation_text = "We cannot allow the Covenant warship to escape to threaten Earth. Take it out before it retreats from the system."
-	win_points = 100
-	slipspace_affected = 1
+//datum/objective/destroy_cov_ship
+	//short_text = "Destroy the Covenant warship"
+	//explanation_text = "We cannot allow the Covenant warship to escape to threaten Earth. Take it out before it retreats from the system."
+	//win_points = 100
+	//slipspace_affected = 1
 
-/datum/objective/destroy_cov_ship/check_completion()
-	if(override > 0)
-		return 1
-	else if(override < 0)
-		return 0
+//datum/objective/destroy_cov_ship/check_completion()
+	//if(override > 0)
+		//return 1
+	//else if(override < 0)
+		//return 0
 
-	var/datum/game_mode/invasion/game_mode = ticker.mode
-	if(istype(game_mode))
-		if(!game_mode.cov_ship)
-			return 1
-	return 0
+	//var/datum/game_mode/invasion/game_mode = ticker.mode
+	//if(istype(game_mode))
+		//if(!game_mode.cov_ship)
+			//return 1
+	//return 0
 
 /datum/objective/colony_capture/innie
 	short_text = "Hold the colony"
-	explanation_text = "We draw the line here. Do not allow rebels or aliens to capture our world."
+	explanation_text = "We draw the line here. Do not allow rebels to capture our world."
