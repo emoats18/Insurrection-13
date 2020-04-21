@@ -46,18 +46,18 @@
 /obj/item/weapon/gun/energy/plasmarifle/urf
 	name = "URF Plasma Rifle"
 	desc = "Nicknamed \"The Marine Slayer\", this weapon fires 3-shot bursts of superheated plasma.It has been modified by the URF Commandos to be more wieldy for human use, with additional spikes."
-	icon = 'code/modules/halo/newharvest/newharvest.dmi'
-	icon_state = "URFplasrifle"
-	item_state = "plasmarifle"
-	icon_override = 'code/modules/halo/newharvest/newharvest.dmi'
+	icon = 'code/modules/halo/icons/Covenant Weapons.dmi'
+	icon_state = "URF Plasma Rifle"
+	item_state = "bruteplasmarifle"
 	slot_flags = SLOT_BELT|SLOT_HOLSTER|SLOT_POCKET|SLOT_BACK
 	fire_sound = 'code/modules/halo/sounds/plasrifle3burst.ogg'
-	charge_meter = 1
+	charge_meter = 0
 	max_shots = 120 //Less shots, more damage. Exactly 40 bursts.
 	burst = 3
-	projectile_type = /obj/item/projectile/covenant/plasmarifle
+	projectile_type = /obj/item/projectile/covenant/plasmarifle/brute
 	screen_shake = 0
 	is_heavy = 1
+	irradiate_non_cov = 0
 	fire_delay = 10 //4 more ticks than usual
 	dispersion=list(0.0, 0.6, 0.8)
 	item_icons = list(
@@ -69,29 +69,37 @@
 	name = "URF Plasma Pistol"
 	desc = "A dual funtionality pistol: It fires bolts of plasma, and when overcharged is capable of emitting a small emp burst at the point of impact. It is usually used either as a backup weapon or a targetted EMP against machinery and shields alike.It has been modified by the URF Commandos to be more wieldy for human use, with additional spikes."
 	icon = 'code/modules/halo/icons/Covenant Weapons.dmi'
-	icon_state = "URFplaspistol"
-	icon_override = 'code/modules/halo/newharvest/newharvest.dmi'
+	icon_state = "URF Plasma Pistol"
+	item_state = "urfplasmapistol"
 	slot_flags = SLOT_BELT|SLOT_HOLSTER|SLOT_POCKET|SLOT_BACK
 	fire_sound = 'code/modules/halo/sounds/haloplasmapistol.ogg'
-	charge_meter = 1
+	charge_meter = 0
 	max_shots = 80
 	slowdown_general = 0
 	projectile_type = /obj/item/projectile/covenant/plasmapistol
 	screen_shake = 0
-	//irradiate_non_cov = 5. Used to be covenant only, but URF version doesn't give rads.
+	irradiate_non_cov = 0
+
+	item_icons = list(
+		slot_l_hand_str = 'code/modules/halo/weapons/icons/Weapon_Inhands_left.dmi',
+		slot_r_hand_str = 'code/modules/halo/weapons/icons/Weapon_Inhands_right.dmi',
+		)
 
 /obj/item/weapon/gun/projectile/needler/urf // Uses "magazines" to reload rather than inbuilt cells.
 	name = "URF Needler"
 	desc = "This weapon fire razor-sharp crystalline shards which can explode violently when embedded into targets. It has been modified by the URF Commandos to be more wieldy for human use, with additional spikes."
 	icon = 'code/modules/halo/icons/Covenant Weapons.dmi'
-	icon_state = "URFneedler"
-	item_state = "needler"
-	icon_override = 'code/modules/halo/newharvest/newharvest.dmi'
+	icon_state = "URF Needler"
+	item_state = "urfneedler"
 	slot_flags = SLOT_BELT||SLOT_HOLSTER
 	fire_sound = 'code/modules/halo/sounds/needlerfire.ogg'
 	magazine_type = /obj/item/ammo_magazine/needles
 	caliber = "needler"
 	burst = 3
 	is_heavy = 1
-	//irradiate_non_cov = 2
+	irradiate_non_cov = 0
 	slowdown_general = 0
+	item_icons = list(
+		slot_l_hand_str = 'code/modules/halo/weapons/icons/Weapon_Inhands_left.dmi',
+		slot_r_hand_str = 'code/modules/halo/weapons/icons/Weapon_Inhands_right.dmi',
+		)
