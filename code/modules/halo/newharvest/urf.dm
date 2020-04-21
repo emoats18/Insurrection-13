@@ -44,8 +44,8 @@
 	slowdown_per_slot[slot_wear_suit] = 0
 
 /obj/item/weapon/gun/energy/plasmarifle/urf
-	name = "Type-25 Directed Energy Rifle"
-	desc = "Also known as the \"Plasma Rifle\", this weapon fires 3-shot bursts of superheated plasma.It has been modified by the URF Commandos to be more wieldy for human use, with additional spikes."
+	name = "URF Plasma Rifle"
+	desc = "Nicknamed \"The Marine Slayer\", this weapon fires 3-shot bursts of superheated plasma.It has been modified by the URF Commandos to be more wieldy for human use, with additional spikes."
 	icon = 'code/modules/halo/newharvest/newharvest.dmi'
 	icon_state = "URFplasrifle"
 	item_state = "plasmarifle"
@@ -66,8 +66,8 @@
 		)
 
 /obj/item/weapon/gun/energy/plasmapistol/urf
-	name = "Type-25 Directed Energy Pistol"
-	desc = "A dual funtionality pistol: It fires bolts of plasma, and when overcharged is capable of emitting a small emp burst at the point of impact.It has been modified by the URF Commandos to be more wieldy for human use, with additional spikes."
+	name = "URF Plasma Pistol"
+	desc = "A dual funtionality pistol: It fires bolts of plasma, and when overcharged is capable of emitting a small emp burst at the point of impact. It is usually used either as a backup weapon or a targetted EMP against machinery and shields alike.It has been modified by the URF Commandos to be more wieldy for human use, with additional spikes."
 	icon = 'code/modules/halo/icons/Covenant Weapons.dmi'
 	icon_state = "URFplaspistol"
 	icon_override = 'code/modules/halo/newharvest/newharvest.dmi'
@@ -81,7 +81,7 @@
 	//irradiate_non_cov = 5. Used to be covenant only, but URF version doesn't give rads.
 
 /obj/item/weapon/gun/projectile/needler/urf // Uses "magazines" to reload rather than inbuilt cells.
-	name = "Type-33 Guided Munitions Launcher"
+	name = "URF Needler"
 	desc = "This weapon fire razor-sharp crystalline shards which can explode violently when embedded into targets. It has been modified by the URF Commandos to be more wieldy for human use, with additional spikes."
 	icon = 'code/modules/halo/icons/Covenant Weapons.dmi'
 	icon_state = "URFneedler"
