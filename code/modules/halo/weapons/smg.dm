@@ -40,6 +40,39 @@
 		icon_state = "m7smg_unloaded"
 	. = ..()
 
+/obj/item/weapon/gun/projectile/urfm7_smg
+	name = "'Lil Choppa' Modified M7 SMG"
+	desc = "A Heavily butchered M7 SMG with the barrel cut down and stock removed, has a higher fire rate but is very uncontrolable. Takes 5mm calibre magazines."
+	icon = 'code/modules/halo/weapons/icons/Weapon Sprites.dmi'
+	icon_state = "urfm7smg"
+	item_state = "m7"
+	caliber = "5mm"
+	slot_flags = SLOT_BACK|SLOT_BELT
+	fire_sound = 'code/modules/halo/sounds/SMG_Short_Burst_Sound_Effect.ogg'
+	//fire_sound_burst = 'code/modules/halo/sounds/SMG_Short_Burst_Sound_Effect.ogg'
+	reload_sound = 'code/modules/halo/sounds/SMG_Reload_Sound_Effect.ogg'
+	load_method = MAGAZINE
+	magazine_type = /obj/item/ammo_magazine/m5
+	handle_casings = CASELESS
+	burst = 6
+	burst_delay = 2
+	accuracy = -2
+	screen_shake = 1
+	dispersion = list(0.5,2.2,0.5,1,2,4,2.5,3.5,2.5,2.5,2.5,2.5,2.5,3,3)
+	allowed_magazines = list(/obj/item/ammo_magazine/m5, /obj/item/ammo_magazine/m5/rubber)
+	w_class = ITEM_SIZE_NORMAL
+	item_icons = list(
+		slot_l_hand_str = 'code/modules/halo/weapons/icons/Weapon_Inhands_left.dmi',
+		slot_r_hand_str = 'code/modules/halo/weapons/icons/Weapon_Inhands_right.dmi',
+		)
+
+/obj/item/weapon/gun/projectile/m7_smg/update_icon()
+	if(ammo_magazine)
+		icon_state = "urfm7smg"
+	else
+		icon_state = "urfm7smg_unloaded"
+	. = ..()
+
 /obj/item/weapon/gun/projectile/m7_smg/silenced
 	name = "M7S submachine gun"
 	desc = "The M7S is a special operations variant of the M7 submachine gun with inbuilt suppressor and host of other attachments. Takes 5mm calibre magazines."
