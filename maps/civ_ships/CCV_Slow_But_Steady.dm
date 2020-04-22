@@ -15,4 +15,4 @@
 
 /area/om_ships/caelum
 	name = "CCV Slow But Steady"
-	has_gravity = 0
+	has_gravity = 1
