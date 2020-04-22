@@ -45,7 +45,7 @@
 	desc = "A Heavily butchered M7 SMG with the barrel cut down and stock removed, has a higher fire rate but is very uncontrolable. Takes 5mm calibre magazines."
 	icon = 'code/modules/halo/weapons/icons/Weapon Sprites.dmi'
 	icon_state = "urfm7smg"
-	item_state = "m7"
+	item_state = "urfm7"
 	caliber = "5mm"
 	slot_flags = SLOT_BACK|SLOT_BELT
 	fire_sound = 'code/modules/halo/sounds/SMG_Short_Burst_Sound_Effect.ogg'
