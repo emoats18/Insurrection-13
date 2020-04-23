@@ -106,3 +106,18 @@
 	r_pocket = /obj/item/weapon/grenade/frag/m9_hedp
 	belt = /obj/item/weapon/gun/projectile/m6d_magnum
 	back = /obj/item/weapon/gun/projectile/ma5b_ar
+
+/decl/hierarchy/outfit/doomguy
+	name = "Doom Slayer"
+	uniform = /obj/item/clothing/under/spartan_internal
+	suit = /obj/item/clothing/suit/armor/special/spartan/praetor
+	gloves = /obj/item/clothing/gloves/spartan
+	shoes = /obj/item/clothing/shoes/magboots/spartan
+	belt = /obj/item/weapon/storage/belt/marine_ammo
+	head = /obj/item/clothing/head/helmet/spartan/praetor
+	l_ear = /obj/item/device/radio/headset/unsc/odsto
+	suit_store = /obj/item/weapon/tank/emergency/oxygen/double
+	l_pocket = /obj/item/ammo_magazine/m127_saphe
+	r_pocket = /obj/item/weapon/grenade/frag/m9_hedp
+	belt = /obj/item/weapon/gun/projectile/m6d_magnum
+	back = /obj/item/weapon/gun/projectile/shotgun/pump/m90_doomguy
