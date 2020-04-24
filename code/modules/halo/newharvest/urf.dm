@@ -48,7 +48,7 @@
 	desc = "Nicknamed \"The Marine Slayer\", this weapon fires 3-shot bursts of superheated plasma.It has been modified by the URF Commandos to be more wieldy for human use, with additional spikes."
 	icon = 'code/modules/halo/icons/Covenant Weapons.dmi'
 	icon_state = "URF Plasma Rifle"
-	item_state = "bruteplasmarifle"
+	item_state = "urfplasmarifle"
 	slot_flags = SLOT_BELT|SLOT_HOLSTER|SLOT_POCKET|SLOT_BACK
 	fire_sound = 'code/modules/halo/sounds/plasrifle3burst.ogg'
 	charge_meter = 0
