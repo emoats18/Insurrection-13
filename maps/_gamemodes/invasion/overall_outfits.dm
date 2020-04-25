@@ -32,7 +32,7 @@
 	uniform = /obj/item/clothing/under/urf
 	shoes = /obj/item/clothing/shoes/tactical
 	l_ear = /obj/item/device/radio/headset/insurrection
-	gloves = /obj/item/clothing/gloves/tactical
+	gloves = /obj/item/clothing/gloves/thick/urf
 	pda_slot = null
 
 	flags = 0
@@ -40,14 +40,14 @@
 /decl/hierarchy/outfit/job/innie_crew_captain
 	name = "Insurrectionist Captain"
 
-	head = /obj/item/clothing/head/helmet/urf
+	head = /obj/item/clothing/head/beret/urf
 	glasses = /obj/item/clothing/glasses/hud/tactical
 	mask = /obj/item/clothing/mask/balaclava/tactical
 	suit = /obj/item/clothing/suit/storage/URF
 	uniform = /obj/item/clothing/under/urf
 	shoes = /obj/item/clothing/shoes/tactical
 	l_ear = /obj/item/device/radio/headset/insurrection
-	gloves = /obj/item/clothing/gloves/tactical
+	gloves = /obj/item/clothing/gloves/thick/urf
 	pda_slot = null
 
 	flags = 0

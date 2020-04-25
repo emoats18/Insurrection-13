@@ -1,7 +1,7 @@
 #define INNIE_OVERRIDE 'code/modules/halo/clothing/inniearmor.dmi'
 
 /obj/item/clothing/under/innie/jumpsuit
-	name = "Insurrectionist-modified Jumpsuit"
+	name = "Insurrectionist Modified Jumpsuit"
 	desc = "A grey jumpsuit, modified with extra padding."
 	icon = INNIE_OVERRIDE
 	icon_override = INNIE_OVERRIDE
@@ -888,5 +888,25 @@
 
 	integrated_hud = /obj/item/clothing/glasses/hud/tactical
 
+
+/obj/item/clothing/gloves/thick/urf //Combined effect of SWAT gloves and insulated gloves
+	desc = "Standard Issue URF Combat Gloves."
+	name = "URF Combat gloves"
+	icon_override = INNIE_OVERRIDE
+	item_state = "urfgloves_worn"
+	icon_state = "urfgloves_obj"
+	siemens_coefficient = 0
+	permeability_coefficient = 0.05
+	body_parts_covered = HANDS
+	armor = list(melee = 30, bullet = 40, laser = 10, energy = 25, bomb = 15, bio = 0, rad = 0)
+	cold_protection = HANDS
+	min_cold_protection_temperature = GLOVES_MIN_COLD_PROTECTION_TEMPERATURE
+	heat_protection = HANDS
+	max_heat_protection_temperature = GLOVES_MAX_HEAT_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/head/beret/urf
+	name = "URF Commander Beret"
+	desc = "A beret with the URF insignia emblazoned on it."
+	icon_state = "beret_corporate_red"
 
 #undef INNIE_OVERRIDE

@@ -229,3 +229,60 @@
 	/obj/item/clothing/gloves/thick/swat = 8,
 	/obj/item/clothing/shoes/magboots/urfc = 8,
 	/obj/item/weapon/armor_patch = 4)
+
+/obj/machinery/vending/armory/urfarmor
+	name = "URF Armor Vendor"
+	desc = "An Armtech vendor with damaged fastenings. Many products appear to be missing and have makeshift product names taped over them."
+	product_ads = "URF! URF!;Terrorism on demand!;Freedom comes knocking!"
+	icon_state ="ironhammer"
+	icon_deny = "ironhammer-deny"
+	products = list(
+	/obj/item/clothing/under/innie/jumpsuit = 15,
+	/obj/item/clothing/under/tactical = 15,
+	/obj/item/clothing/under/urf = 15,
+	/obj/item/clothing/gloves/tactical = 15,
+	/obj/item/clothing/gloves/thick/urf = 15,
+	/obj/item/weapon/storage/belt/security/tactical = 15,
+	/obj/item/clothing/mask/balaclava/tactical = 15,
+	/obj/item/clothing/mask/innie/shemagh = 15,
+	/obj/item/weapon/armor_patch = 4,
+	/obj/item/clothing/head/helmet/urf = 8,
+	/obj/item/clothing/suit/storage/URF = 8,
+	/obj/item/clothing/head/helmet/tactical = 15,
+	/obj/item/clothing/head/helmet/heavyurf/green = 4,
+	/obj/item/clothing/head/helmet/heavyurf/brown = 4,
+	/obj/item/clothing/head/helmet/heavyurf/black = 4,
+	/obj/item/clothing/head/helmet/mediumurf/brown = 8,
+	/obj/item/clothing/head/helmet/mediumurf/green = 8,
+	/obj/item/clothing/head/helmet/mediumurf/black = 8,
+	/obj/item/clothing/head/helmet/lighturf/brown = 8,
+	/obj/item/clothing/head/helmet/lighturf/green = 8,
+	/obj/item/clothing/head/helmet/lighturf/black = 8,
+	/obj/item/clothing/suit/storage/vest/tactical = 15,
+	/obj/item/clothing/suit/storage/heavyurfarmor/green = 4,
+	/obj/item/clothing/suit/storage/heavyurfarmor/brown = 4,
+	/obj/item/clothing/suit/storage/heavyurfarmor/black = 4,
+	/obj/item/clothing/suit/storage/mediumurfarmor/green = 8,
+	/obj/item/clothing/suit/storage/mediumurfarmor/brown = 8,
+	/obj/item/clothing/suit/storage/mediumurfarmor/black = 8,
+	/obj/item/clothing/suit/storage/lighturfarmor/green = 8,
+	/obj/item/clothing/suit/storage/lighturfarmor/brown = 8,
+	/obj/item/clothing/suit/storage/lighturfarmor/black = 8,
+	/obj/item/clothing/shoes/tactical = 15,
+	/obj/item/clothing/shoes/mediumurfboot/green = 8,
+	/obj/item/clothing/shoes/mediumurfboot/brown = 8,
+	/obj/item/clothing/shoes/mediumurfboot/black = 8,
+	/obj/item/clothing/shoes/lighturfboot/green = 8,
+	/obj/item/clothing/shoes/lighturfboot/brown = 8,
+	/obj/item/clothing/shoes/lighturfboot/black = 8)
+
+/obj/machinery/vending/armory/urfhybrid // Both ammo, and guns!
+	name = "URF Weapon and Ammunition Rack"
+	desc = "An Armtech vendor with damaged fastenings. Many products appear to be missing and have makeshift product names taped over them."
+	product_ads = "URF! URF!;Terrorism on demand!;Freedom comes knocking!"
+	icon_state ="ironhammer" // SPRITES
+	icon_deny = "ironhammer-deny"
+	products = list(/obj/item/ammo_magazine/m127_saphe =20,/obj/item/ammo_magazine/m127_saphp =20,/obj/item/ammo_magazine/m762_ap/MA3 = 40,/obj/item/ammo_magazine/m762_ap/M392 = 30,/obj/item/ammo_magazine/m762_ap/MA37 = 40
+					,/obj/item/ammo_magazine/m95_sap = 20,/obj/item/ammo_magazine/m5 = 20,/obj/item/ammo_box/shotgun = 10,/obj/item/ammo_box/shotgun/slug = 10,/obj/item/weapon/material/knife/combat_knife =15,/obj/item/weapon/material/machete = 2
+					,/obj/item/weapon/gun/projectile/m6d_magnum = 15,/obj/item/weapon/gun/projectile/ma5b_ar/MA37 = 15,/obj/item/weapon/gun/projectile/br55 = 2, /obj/item/weapon/gun/projectile/ma5b_ar/MA3 = 15
+					,/obj/item/weapon/gun/projectile/shotgun/pump/m90_innie = 8,/obj/item/weapon/gun/projectile/urfm7_smg = 8,/obj/item/weapon/gun/projectile/m392_dmr = 5,/obj/item/weapon/grenade/frag/m9_hedp = 5,/obj/item/weapon/grenade/smokebomb = 5, /obj/item/weapon/armor_patch = 5)
