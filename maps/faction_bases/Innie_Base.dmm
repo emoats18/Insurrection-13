@@ -599,6 +599,7 @@
 "lA" = (/obj/docking_umbilical/south,/turf/simulated/floor/tiled/dark,/area/faction_base/innie)
 "lB" = (/obj/effect/landmark/map_data{name = "Camp New Hope"},/turf/space,/area/faction_base/innie)
 "lC" = (/obj/effect/overmap/ship/faction_base/innie,/turf/space,/area/faction_base/innie)
+"lD" = (/obj/structure/table/rack,/obj/effect/floor_decal/corner/red/diagonal,/obj/item/clothing/suit/storage/heavyurfarmor/brown,/obj/item/clothing/suit/storage/heavyurfarmor/green,/obj/item/clothing/head/helmet/heavyurf/brown,/obj/item/clothing/head/helmet/heavyurf/green,/turf/simulated/floor/tiled/dark,/area/faction_base/innie)
 "lE" = (/obj/effect/floor_decal/corner/red/diagonal,/obj/machinery/vending/armory/urfarmor,/turf/simulated/floor/tiled/dark,/area/faction_base/innie)
 "lF" = (/obj/effect/floor_decal/industrial/warning,/obj/machinery/door/airlock/multi_tile/halo/blast{dir = 1},/turf/simulated/floor/tiled/dark,/area/faction_base/innie)
 "lG" = (/obj/structure/table/rack,/obj/effect/floor_decal/corner/red/diagonal,/obj/item/ammo_box/shotgun,/obj/item/ammo_box/shotgun,/obj/item/ammo_box/shotgun,/obj/item/ammo_box/shotgun,/obj/item/ammo_box/shotgun,/obj/item/ammo_box/shotgun,/obj/item/ammo_box/shotgun,/obj/item/ammo_box/shotgun,/obj/item/ammo_box/shotgun,/obj/item/ammo_box/shotgun,/obj/item/ammo_box/shotgun,/turf/simulated/floor/tiled/dark,/area/faction_base/innie)
@@ -629,7 +630,7 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababadadadadadafagaParaAaAaAaAaAaAaAaAas
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababadadadadadafaYaZasaAaAaAaAaAaAbaaAasaoaQaoaQaoaoaobbafaEaFaFaFaFaFaFaFaFaFaGaWaWaWbcaWbdaWaWbeaWbfbgbfafadadadadababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabaeadadadadadadafafafafafafafafafasbhasasbibjafafafafafafafafafafafafaEaFaFaFaFaGaWaWaWaWaWaWaWaWaWaWaWaWaWafadadadadababababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababadadadafafafafafafafafafbkaoaoaoaoaoaoaQaQafafafafafafafafafafafafaVaFaFaFaFaGaWaWaWaWaWaWaWaWbeaWbfbgblafadadadadababababababababaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababadadafbmafafbnafafafafboaoaoaoaoafafafafafafafgGcbeAlElJeAbpbuafafaEaFaFaFaFaGaWaWbvbwbxbyaWaWbzaWaWaWaWafadadadadabababaeabababababaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababadadafbmafafbnafafafafboaoaoaoaoafafafafafafafgGcbeAlElJeAlDbuafafaEaFaFaFaFaGaWaWbvbwbxbyaWaWbzaWaWaWaWafadadadadabababaeabababababaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababadadafafbAbBbCbDbEbFafafafbGbHafboafbIbJbKbLbMafbNbNbObObNbNbNbNafbPafafafafafafafafafafafafbQbaafafafafafafadadadadadabababaeacababaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabaeadadafbRbSbSbSbSbSbSbTbUbTbNbNbNbNafbVbJbWbXbXafbYbsbrbtcblGcbbNbNbNccaAcdaAaAaAaAaAaAaAaAaAaAaAaAaAaAaAafafadadadadadabababaeabababaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababadadafcebScfbSbSbSbSbTbUcgbNbNchciafbVbJbJbLbMafbNbZcalHcbcblIbNbNcjccaAaAaAaAaAaAaAaAaAaAckaAaAaAaAaAaAafadadadadadadadabababababababaaaaaaaaaaaaaaaaaaaaaaaaaa

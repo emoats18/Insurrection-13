@@ -41,6 +41,7 @@
 	name = "Insurrectionist Captain"
 
 	head = /obj/item/clothing/head/beret/urf
+	glasses = /obj/item/clothing/glasses/sunglasses
 	suit = /obj/item/clothing/suit/storage/heavyurfarmor/black
 	uniform = /obj/item/clothing/under/urfc_jumpsuit
 	shoes = /obj/item/clothing/shoes/mediumurfboot/black

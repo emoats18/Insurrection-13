@@ -262,11 +262,7 @@
 	/obj/item/clothing/suit/storage/mediumurfarmor/green = 8,
 	/obj/item/clothing/suit/storage/mediumurfarmor/brown = 8,
 	/obj/item/clothing/shoes/mediumurfboot/green = 8,
-	/obj/item/clothing/shoes/mediumurfboot/brown = 8,
-	/obj/item/clothing/head/helmet/heavyurf/green = 1,
-	/obj/item/clothing/head/helmet/heavyurf/brown = 1,
-	/obj/item/clothing/suit/storage/heavyurfarmor/green = 1,
-	/obj/item/clothing/suit/storage/heavyurfarmor/brown = 1)
+	/obj/item/clothing/shoes/mediumurfboot/brown = 8)
 
 /obj/machinery/vending/armory/urfhybrid // Both ammo, and guns!
 	name = "URF Weapon and Ammunition Rack"
