@@ -25,12 +25,12 @@
 /decl/hierarchy/outfit/job/innie_crewmember
 	name = "Insurrectionist Crewmember"
 
-	head = /obj/item/clothing/head/helmet/urf
+	head = /obj/item/clothing/head/helmet/mediumurf/green
 	glasses = /obj/item/clothing/glasses/hud/tactical
 	mask = /obj/item/clothing/mask/balaclava/tactical
-	suit = /obj/item/clothing/suit/storage/URF
-	uniform = /obj/item/clothing/under/urf
-	shoes = /obj/item/clothing/shoes/tactical
+	suit = /obj/item/clothing/suit/storage/mediumurfarmor/green
+	uniform = /obj/item/clothing/under/innie/jumpsuit
+	shoes = /obj/item/clothing/shoes/mediumurfboot/green
 	l_ear = /obj/item/device/radio/headset/insurrection
 	gloves = /obj/item/clothing/gloves/thick/urf
 	pda_slot = null
@@ -41,11 +41,9 @@
 	name = "Insurrectionist Captain"
 
 	head = /obj/item/clothing/head/beret/urf
-	glasses = /obj/item/clothing/glasses/hud/tactical
-	mask = /obj/item/clothing/mask/balaclava/tactical
-	suit = /obj/item/clothing/suit/storage/URF
-	uniform = /obj/item/clothing/under/urf
-	shoes = /obj/item/clothing/shoes/tactical
+	suit = /obj/item/clothing/suit/storage/heavyurfarmor/black
+	uniform = /obj/item/clothing/under/urfc_jumpsuit
+	shoes = /obj/item/clothing/shoes/mediumurfboot/black
 	l_ear = /obj/item/device/radio/headset/insurrection
 	gloves = /obj/item/clothing/gloves/thick/urf
 	pda_slot = null
