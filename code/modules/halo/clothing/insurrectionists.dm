@@ -130,6 +130,7 @@
 	item_flags = THICKMATERIAL
 	body_parts_covered = HEAD
 	armor_thickness = 10
+	slowdown_general = 0.2
 	armor = list(melee = 50, bullet = 30, laser = 50,energy = 20, bomb = 25, bio = 0, rad = 0)
 	item_icons = list(
 		slot_l_hand_str = null,
@@ -148,6 +149,7 @@
 	item_flags = THICKMATERIAL
 	body_parts_covered = HEAD
 	armor_thickness = 10
+	slowdown_general = 0.2
 	armor = list(melee = 50, bullet = 30, laser = 50,energy = 20, bomb = 25, bio = 0, rad = 0)
 	item_icons = list(
 		slot_l_hand_str = null,
@@ -166,6 +168,7 @@
 	item_flags = THICKMATERIAL
 	body_parts_covered = HEAD
 	armor_thickness = 10
+	slowdown_general = 0.2
 	armor = list(melee = 50, bullet = 30, laser = 50,energy = 20, bomb = 25, bio = 0, rad = 0)
 	item_icons = list(
 		slot_l_hand_str = null,
@@ -184,6 +187,7 @@
 	item_flags = THICKMATERIAL
 	body_parts_covered = HEAD
 	armor_thickness = 10
+	slowdown_general = 0.2
 	armor = list(melee = 50, bullet = 30, laser = 50,energy = 20, bomb = 25, bio = 0, rad = 0)
 	item_icons = list(
 		slot_l_hand_str = null,
@@ -202,6 +206,7 @@
 	item_flags = THICKMATERIAL
 	body_parts_covered = HEAD
 	armor_thickness = 10
+	slowdown_general = 0.2
 	armor = list(melee = 50, bullet = 30, laser = 50,energy = 20, bomb = 25, bio = 0, rad = 0)
 	item_icons = list(
 		slot_l_hand_str = null,
@@ -218,8 +223,10 @@
 	item_state = "h_innie_helmet_brown"
 	icon_state = "h_innie_helmet_obj_brown"
 	item_flags = THICKMATERIAL
+	w_class = ITEM_SIZE_HUGE
 	body_parts_covered = HEAD
 	armor_thickness = 15
+	slowdown_general = 0.5
 	armor = list(melee = 55, bullet = 40, laser = 55,energy = 25, bomb = 25, bio = 0, rad = 0)
 	item_icons = list(
 		slot_l_hand_str = null,
@@ -236,8 +243,10 @@
 	item_state = "h_innie_helmet_blue"
 	icon_state = "h_innie_helmet_obj_blue"
 	item_flags = THICKMATERIAL
+	w_class = ITEM_SIZE_HUGE
 	body_parts_covered = HEAD
 	armor_thickness = 15
+	slowdown_general = 0.5
 	armor = list(melee = 55, bullet = 40, laser = 55,energy = 25, bomb = 25, bio = 0, rad = 0)
 	item_icons = list(
 		slot_l_hand_str = null,
@@ -254,8 +263,10 @@
 	item_state = "h_innie_helmet_green"
 	icon_state = "h_innie_helmet_obj_green"
 	item_flags = THICKMATERIAL
+	w_class = ITEM_SIZE_HUGE
 	body_parts_covered = HEAD
 	armor_thickness = 15
+	slowdown_general = 0.5
 	armor = list(melee = 55, bullet = 40, laser = 55,energy = 25, bomb = 25, bio = 0, rad = 0)
 	item_icons = list(
 		slot_l_hand_str = null,
@@ -272,8 +283,10 @@
 	item_state = "h_innie_helmet_black"
 	icon_state = "h_innie_helmet_obj_black"
 	item_flags = THICKMATERIAL
+	w_class = ITEM_SIZE_HUGE
 	body_parts_covered = HEAD
 	armor_thickness = 15
+	slowdown_general = 0.5
 	armor = list(melee = 55, bullet = 40, laser = 55,energy = 25, bomb = 25, bio = 0, rad = 0)
 	item_icons = list(
 		slot_l_hand_str = null,
@@ -290,8 +303,10 @@
 	item_state = "h_innie_helmet_white"
 	icon_state = "h_innie_helmet_obj_white"
 	item_flags = THICKMATERIAL
+	w_class = ITEM_SIZE_HUGE
 	body_parts_covered = HEAD
 	armor_thickness = 15
+	slowdown_general = 0.5
 	armor = list(melee = 55, bullet = 40, laser = 55,energy = 25, bomb = 25, bio = 0, rad = 0)
 	item_icons = list(
 		slot_l_hand_str = null,
@@ -307,12 +322,12 @@
 	icon_override = INNIE_OVERRIDE
 	item_state = "l_innie_foot_brown"
 	icon_state = "l_innie_foot_obj_brown"
-	force = 2
-	armor = list(melee = 20, bullet = 20, laser = 5, energy = 20, bomb = 15, bio = 0, rad = 0)
-	item_flags = NOSLIP
-	siemens_coefficient = 0.6
-	body_parts_covered = FEET|LEGS
+	force = 5
+	armor = list(melee = 30, bullet = 30, laser = 10, energy = 15, bomb = 20, bio = 0, rad = 0)
+	siemens_coefficient = 0.7
 	can_hold_knife = 1
+	body_parts_covered = FEET|LEGS
+	item_flags = NOSLIP
 	cold_protection = FEET
 	min_cold_protection_temperature = SHOE_MIN_COLD_PROTECTION_TEMPERATURE
 	heat_protection = FEET
@@ -325,12 +340,12 @@
 	icon_override = INNIE_OVERRIDE
 	item_state = "l_innie_foot_blue"
 	icon_state = "l_innie_foot_obj_blue"
-	force = 2
-	armor = list(melee = 20, bullet = 20, laser = 5, energy = 20, bomb = 15, bio = 0, rad = 0)
-	item_flags = NOSLIP
-	siemens_coefficient = 0.6
-	body_parts_covered = FEET|LEGS
+	force = 5
+	armor = list(melee = 30, bullet = 30, laser = 10, energy = 15, bomb = 20, bio = 0, rad = 0)
+	siemens_coefficient = 0.7
 	can_hold_knife = 1
+	body_parts_covered = FEET|LEGS
+	item_flags = NOSLIP
 	cold_protection = FEET
 	min_cold_protection_temperature = SHOE_MIN_COLD_PROTECTION_TEMPERATURE
 	heat_protection = FEET
@@ -343,12 +358,12 @@
 	icon_override = INNIE_OVERRIDE
 	item_state = "l_innie_foot_green"
 	icon_state = "l_innie_foot_obj_green"
-	force = 2
-	armor = list(melee = 20, bullet = 20, laser = 5, energy = 20, bomb = 15, bio = 0, rad = 0)
-	item_flags = NOSLIP
-	siemens_coefficient = 0.6
-	body_parts_covered = FEET|LEGS
+	force = 5
+	armor = list(melee = 30, bullet = 30, laser = 10, energy = 15, bomb = 20, bio = 0, rad = 0)
+	siemens_coefficient = 0.7
 	can_hold_knife = 1
+	body_parts_covered = FEET|LEGS
+	item_flags = NOSLIP
 	cold_protection = FEET
 	min_cold_protection_temperature = SHOE_MIN_COLD_PROTECTION_TEMPERATURE
 	heat_protection = FEET
@@ -361,12 +376,12 @@
 	icon_override = INNIE_OVERRIDE
 	item_state = "l_innie_foot_black"
 	icon_state = "l_innie_foot_obj_black"
-	force = 2
-	armor = list(melee = 20, bullet = 20, laser = 5, energy = 20, bomb = 15, bio = 0, rad = 0)
-	item_flags = NOSLIP
-	siemens_coefficient = 0.6
-	body_parts_covered = FEET|LEGS
+	force = 5
+	armor = list(melee = 30, bullet = 30, laser = 10, energy = 15, bomb = 20, bio = 0, rad = 0)
+	siemens_coefficient = 0.7
 	can_hold_knife = 1
+	body_parts_covered = FEET|LEGS
+	item_flags = NOSLIP
 	cold_protection = FEET
 	min_cold_protection_temperature = SHOE_MIN_COLD_PROTECTION_TEMPERATURE
 	heat_protection = FEET
@@ -475,7 +490,6 @@
 	var/slots = 2
 	var/max_w_class = ITEM_SIZE_SMALL
 	armor_thickness = 10
-	slowdown_general = -0.5
 	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/weapon/flame/lighter)
 	starting_accessories = /obj/item/clothing/accessory/holster/hip
 
@@ -492,7 +506,6 @@
 	slots = 2
 	max_w_class = ITEM_SIZE_SMALL
 	armor_thickness = 10
-	slowdown_general = -0.5
 	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/weapon/flame/lighter)
 	starting_accessories = /obj/item/clothing/accessory/holster/hip
 
@@ -509,7 +522,6 @@
 	slots = 2
 	max_w_class = ITEM_SIZE_SMALL
 	armor_thickness = 10
-	slowdown_general = -0.5
 	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/weapon/flame/lighter)
 	starting_accessories = /obj/item/clothing/accessory/holster/hip
 
@@ -526,7 +538,6 @@
 	slots = 2
 	max_w_class = ITEM_SIZE_SMALL
 	armor_thickness = 10
-	slowdown_general = -0.5
 	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/weapon/flame/lighter)
 	starting_accessories = /obj/item/clothing/accessory/holster/hip
 
@@ -543,7 +554,6 @@
 	slots = 2
 	max_w_class = ITEM_SIZE_SMALL
 	armor_thickness = 10
-	slowdown_general = -0.5
 	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/weapon/flame/lighter)
 	starting_accessories = /obj/item/clothing/accessory/holster/hip
 
@@ -560,7 +570,6 @@
 	slots = 6
 	max_w_class = ITEM_SIZE_SMALL
 	armor_thickness = 10
-	slowdown_general = -0.5
 	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/weapon/flame/lighter)
 	starting_accessories = /obj/item/clothing/accessory/holster/hip
 
@@ -577,6 +586,7 @@
 	var/slots = 4
 	var/max_w_class = ITEM_SIZE_SMALL
 	armor_thickness = 25
+	slowdown_general = 0.2
 	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/weapon/flame/lighter)
 	starting_accessories = /obj/item/clothing/accessory/holster/hip
 
@@ -594,6 +604,7 @@
 	slots = 4
 	max_w_class = ITEM_SIZE_SMALL
 	armor_thickness = 25
+	slowdown_general = 0.2
 	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/weapon/flame/lighter)
 	starting_accessories = /obj/item/clothing/accessory/holster/hip
 
@@ -610,6 +621,7 @@
 	slots = 4
 	max_w_class = ITEM_SIZE_SMALL
 	armor_thickness = 25
+	slowdown_general = 0.2
 	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/weapon/flame/lighter)
 	starting_accessories = /obj/item/clothing/accessory/holster/hip
 
@@ -626,6 +638,7 @@
 	slots = 4
 	max_w_class = ITEM_SIZE_SMALL
 	armor_thickness = 25
+	slowdown_general = 0.2
 	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/weapon/flame/lighter)
 	starting_accessories = /obj/item/clothing/accessory/holster/hip
 
@@ -642,6 +655,7 @@
 	slots = 4
 	max_w_class = ITEM_SIZE_SMALL
 	armor_thickness = 25
+	slowdown_general = 0.2
 	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/weapon/flame/lighter)
 	starting_accessories = /obj/item/clothing/accessory/holster/hip
 
@@ -658,6 +672,7 @@
 	slots = 4
 	max_w_class = ITEM_SIZE_SMALL
 	armor_thickness = 25
+	slowdown_general = 0.2
 	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/weapon/flame/lighter)
 	starting_accessories = /obj/item/clothing/accessory/holster/hip
 
