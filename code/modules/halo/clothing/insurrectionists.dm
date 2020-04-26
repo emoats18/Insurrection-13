@@ -222,12 +222,20 @@
 	icon_override = INNIE_OVERRIDE
 	item_state = "h_innie_helmet_brown"
 	icon_state = "h_innie_helmet_obj_brown"
-	item_flags = THICKMATERIAL
-	w_class = ITEM_SIZE_HUGE
 	body_parts_covered = HEAD
-	armor_thickness = 15
-	slowdown_general = 0.5
-	armor = list(melee = 55, bullet = 40, laser = 55,energy = 25, bomb = 25, bio = 0, rad = 0)
+	item_flags = THICKMATERIAL
+	w_class = ITEM_SIZE_HUGE//bulky item
+	gas_transfer_coefficient = 0.01
+	permeability_coefficient = 0.01
+	slowdown_general = 1
+	siemens_coefficient = 1.5
+	armor_thickness = 20
+	armor = list(melee = 50, bullet = 50, laser = 50, energy = 50, bomb = 50, bio = 20, rad = 15)
+	gas_transfer_coefficient = 0.90
+	action_button_name = "Toggle Helmet Light"
+	light_overlay = "helmet_light"
+	brightness_on = 4
+	on = 0
 	item_icons = list(
 		slot_l_hand_str = null,
 		slot_r_hand_str = null,
@@ -242,12 +250,20 @@
 	icon_override = INNIE_OVERRIDE
 	item_state = "h_innie_helmet_blue"
 	icon_state = "h_innie_helmet_obj_blue"
-	item_flags = THICKMATERIAL
-	w_class = ITEM_SIZE_HUGE
 	body_parts_covered = HEAD
-	armor_thickness = 15
-	slowdown_general = 0.5
-	armor = list(melee = 55, bullet = 40, laser = 55,energy = 25, bomb = 25, bio = 0, rad = 0)
+	item_flags = THICKMATERIAL
+	w_class = ITEM_SIZE_HUGE//bulky item
+	gas_transfer_coefficient = 0.01
+	permeability_coefficient = 0.01
+	slowdown_general = 1
+	siemens_coefficient = 1.5
+	armor_thickness = 20
+	armor = list(melee = 50, bullet = 50, laser = 50, energy = 50, bomb = 50, bio = 20, rad = 15)
+	gas_transfer_coefficient = 0.90
+	action_button_name = "Toggle Helmet Light"
+	light_overlay = "helmet_light"
+	brightness_on = 4
+	on = 0
 	item_icons = list(
 		slot_l_hand_str = null,
 		slot_r_hand_str = null,
@@ -262,12 +278,20 @@
 	icon_override = INNIE_OVERRIDE
 	item_state = "h_innie_helmet_green"
 	icon_state = "h_innie_helmet_obj_green"
-	item_flags = THICKMATERIAL
-	w_class = ITEM_SIZE_HUGE
 	body_parts_covered = HEAD
-	armor_thickness = 15
-	slowdown_general = 0.5
-	armor = list(melee = 55, bullet = 40, laser = 55,energy = 25, bomb = 25, bio = 0, rad = 0)
+	item_flags = THICKMATERIAL
+	w_class = ITEM_SIZE_HUGE//bulky item
+	gas_transfer_coefficient = 0.01
+	permeability_coefficient = 0.01
+	slowdown_general = 1
+	siemens_coefficient = 1.5
+	armor_thickness = 20
+	armor = list(melee = 50, bullet = 50, laser = 50, energy = 50, bomb = 50, bio = 20, rad = 15)
+	gas_transfer_coefficient = 0.90
+	action_button_name = "Toggle Helmet Light"
+	light_overlay = "helmet_light"
+	brightness_on = 4
+	on = 0
 	item_icons = list(
 		slot_l_hand_str = null,
 		slot_r_hand_str = null,
@@ -282,12 +306,20 @@
 	icon_override = INNIE_OVERRIDE
 	item_state = "h_innie_helmet_black"
 	icon_state = "h_innie_helmet_obj_black"
-	item_flags = THICKMATERIAL
-	w_class = ITEM_SIZE_HUGE
 	body_parts_covered = HEAD
-	armor_thickness = 15
-	slowdown_general = 0.5
-	armor = list(melee = 55, bullet = 40, laser = 55,energy = 25, bomb = 25, bio = 0, rad = 0)
+	item_flags = THICKMATERIAL
+	w_class = ITEM_SIZE_HUGE//bulky item
+	gas_transfer_coefficient = 0.01
+	permeability_coefficient = 0.01
+	slowdown_general = 1
+	siemens_coefficient = 1.5
+	armor_thickness = 20
+	armor = list(melee = 50, bullet = 50, laser = 50, energy = 50, bomb = 50, bio = 20, rad = 15)
+	gas_transfer_coefficient = 0.90
+	action_button_name = "Toggle Helmet Light"
+	light_overlay = "helmet_light"
+	brightness_on = 4
+	on = 0
 	item_icons = list(
 		slot_l_hand_str = null,
 		slot_r_hand_str = null,
@@ -302,12 +334,20 @@
 	icon_override = INNIE_OVERRIDE
 	item_state = "h_innie_helmet_white"
 	icon_state = "h_innie_helmet_obj_white"
-	item_flags = THICKMATERIAL
-	w_class = ITEM_SIZE_HUGE
 	body_parts_covered = HEAD
-	armor_thickness = 15
-	slowdown_general = 0.5
-	armor = list(melee = 55, bullet = 40, laser = 55,energy = 25, bomb = 25, bio = 0, rad = 0)
+	item_flags = THICKMATERIAL
+	w_class = ITEM_SIZE_HUGE//bulky item
+	gas_transfer_coefficient = 0.01
+	permeability_coefficient = 0.01
+	slowdown_general = 1
+	siemens_coefficient = 1.5
+	armor_thickness = 20
+	armor = list(melee = 50, bullet = 50, laser = 50, energy = 50, bomb = 50, bio = 20, rad = 15)
+	gas_transfer_coefficient = 0.90
+	action_button_name = "Toggle Helmet Light"
+	light_overlay = "helmet_light"
+	brightness_on = 4
+	on = 0
 	item_icons = list(
 		slot_l_hand_str = null,
 		slot_r_hand_str = null,
@@ -684,15 +724,19 @@
 	item_state = "h_innie_chest_blue"
 	icon_state = "h_innie_chest_obj_blue"
 	blood_overlay_type = "h_innie_chest_blue"
-	body_parts_covered = ARMS|UPPER_TORSO|LOWER_TORSO
-	armor = list(melee = 55, bullet = 50, laser = 35, energy = 40, bomb = 40, bio = 0, rad = 0)
-	slots = 2
-	max_w_class = ITEM_SIZE_SMALL
-	armor_thickness = 30
-	slowdown_general = 0.5
-	siemens_coefficient = 0.3
-	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/weapon/flame/lighter)
-	starting_accessories = /obj/item/clothing/accessory/holster/hip
+	w_class = ITEM_SIZE_HUGE//bulky item
+	item_flags = THICKMATERIAL
+	allowed = list(/obj/item/weapon/gun/energy,/obj/item/device/radio,/obj/item/weapon/reagent_containers/spray/pepper,/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/melee/baton,/obj/item/weapon/handcuffs,/obj/item/weapon/gun/magnetic)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
+	flags_inv = 29
+	flags_inv = HIDESHOES
+	siemens_coefficient = 0
+	gas_transfer_coefficient = 0.01
+	permeability_coefficient = 0.01
+	armor = list(melee = 50, bullet = 50, laser = 50, energy = 50, bomb = 50, bio = 20, rad = 15)
+	armor_thickness= 30
+	slowdown_general = 1
+	siemens_coefficient = 0.7
 
 /obj/item/clothing/suit/storage/heavyurfarmor/
 	name = "M22H Body Armor"
@@ -702,16 +746,19 @@
 	item_state = "h_innie_chest_brown"
 	icon_state = "h_innie_chest_obj_brown"
 	blood_overlay_type = "h_innie_chest_brown"
-	body_parts_covered = ARMS|UPPER_TORSO|LOWER_TORSO
-	armor = list(melee = 55, bullet = 50, laser = 35, energy = 40, bomb = 40, bio = 0, rad = 0)
-	var/slots = 2
-	var/max_w_class = ITEM_SIZE_SMALL
-	armor_thickness = 20
-	slowdown_general = 0.5
-	siemens_coefficient = 0.3
-	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/weapon/flame/lighter)
-	starting_accessories = /obj/item/clothing/accessory/holster/hip
-
+	w_class = ITEM_SIZE_HUGE//bulky item
+	item_flags = THICKMATERIAL
+	allowed = list(/obj/item/weapon/gun/energy,/obj/item/device/radio,/obj/item/weapon/reagent_containers/spray/pepper,/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/melee/baton,/obj/item/weapon/handcuffs,/obj/item/weapon/gun/magnetic)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
+	flags_inv = 29
+	flags_inv = HIDESHOES
+	siemens_coefficient = 0
+	gas_transfer_coefficient = 0.01
+	permeability_coefficient = 0.01
+	armor = list(melee = 50, bullet = 50, laser = 50, energy = 50, bomb = 50, bio = 20, rad = 15)
+	armor_thickness= 30
+	slowdown_general = 1
+	siemens_coefficient = 0.7
 /obj/item/clothing/suit/storage/heavyurfarmor/brown
 	name = "M22H Body Armor - Brown Camo"
 	desc = "The M22H Body Armor is composed of materials salvaged from a wide array of UNSC equipment based off the M52B Body Armor and re-designed with more plating with overall better defense but lacking in movement crafted by X-25 for the new armor series being rolled out from Eridanus Secundus."
@@ -720,15 +767,19 @@
 	item_state = "h_innie_chest_brown"
 	icon_state = "h_innie_chest_obj_brown"
 	blood_overlay_type = "h_innie_chest_brown"
-	body_parts_covered = ARMS|UPPER_TORSO|LOWER_TORSO
-	armor = list(melee = 55, bullet = 50, laser = 35, energy = 40, bomb = 40, bio = 0, rad = 0)
-	slots = 2
-	max_w_class = ITEM_SIZE_SMALL
-	armor_thickness = 30
-	slowdown_general = 0.5
-	siemens_coefficient = 0.3
-	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/weapon/flame/lighter)
-	starting_accessories = /obj/item/clothing/accessory/holster/hip
+	w_class = ITEM_SIZE_HUGE//bulky item
+	item_flags = THICKMATERIAL
+	allowed = list(/obj/item/weapon/gun/energy,/obj/item/device/radio,/obj/item/weapon/reagent_containers/spray/pepper,/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/melee/baton,/obj/item/weapon/handcuffs,/obj/item/weapon/gun/magnetic)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
+	flags_inv = 29
+	flags_inv = HIDESHOES
+	siemens_coefficient = 0
+	gas_transfer_coefficient = 0.01
+	permeability_coefficient = 0.01
+	armor = list(melee = 50, bullet = 50, laser = 50, energy = 50, bomb = 50, bio = 20, rad = 15)
+	armor_thickness= 30
+	slowdown_general = 1
+	siemens_coefficient = 0.7
 
 /obj/item/clothing/suit/storage/heavyurfarmor/green
 	name = "M22H Body Armor - Green Camo"
@@ -738,15 +789,19 @@
 	item_state = "h_innie_chest_green"
 	icon_state = "h_innie_chest_obj_green"
 	blood_overlay_type = "h_innie_chest_green"
-	body_parts_covered = ARMS|UPPER_TORSO|LOWER_TORSO
-	armor = list(melee = 55, bullet = 50, laser = 35, energy = 40, bomb = 40, bio = 0, rad = 0)
-	slots = 2
-	max_w_class = ITEM_SIZE_SMALL
-	armor_thickness = 30
-	slowdown_general = 0.5
-	siemens_coefficient = 0.3
-	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/weapon/flame/lighter)
-	starting_accessories = /obj/item/clothing/accessory/holster/hip
+	w_class = ITEM_SIZE_HUGE//bulky item
+	item_flags = THICKMATERIAL
+	allowed = list(/obj/item/weapon/gun/energy,/obj/item/device/radio,/obj/item/weapon/reagent_containers/spray/pepper,/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/melee/baton,/obj/item/weapon/handcuffs,/obj/item/weapon/gun/magnetic)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
+	flags_inv = 29
+	flags_inv = HIDESHOES
+	siemens_coefficient = 0
+	gas_transfer_coefficient = 0.01
+	permeability_coefficient = 0.01
+	armor = list(melee = 50, bullet = 50, laser = 50, energy = 50, bomb = 50, bio = 20, rad = 15)
+	armor_thickness= 30
+	slowdown_general = 1
+	siemens_coefficient = 0.7
 
 /obj/item/clothing/suit/storage/heavyurfarmor/black
 	name = "M22H Body Armor - Black Camo"
@@ -756,15 +811,19 @@
 	item_state = "h_innie_chest_black"
 	icon_state = "h_innie_chest_obj_black"
 	blood_overlay_type = "h_innie_chest_black"
-	body_parts_covered = ARMS|UPPER_TORSO|LOWER_TORSO
-	armor = list(melee = 55, bullet = 50, laser = 35, energy = 40, bomb = 40, bio = 0, rad = 0)
-	slots = 2
-	max_w_class = ITEM_SIZE_SMALL
-	armor_thickness = 30
-	slowdown_general = 0.5
-	siemens_coefficient = 0.3
-	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/weapon/flame/lighter)
-	starting_accessories = /obj/item/clothing/accessory/holster/hip
+	w_class = ITEM_SIZE_HUGE//bulky item
+	item_flags = THICKMATERIAL
+	allowed = list(/obj/item/weapon/gun/energy,/obj/item/device/radio,/obj/item/weapon/reagent_containers/spray/pepper,/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/melee/baton,/obj/item/weapon/handcuffs,/obj/item/weapon/gun/magnetic)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
+	flags_inv = 29
+	flags_inv = HIDESHOES
+	siemens_coefficient = 0
+	gas_transfer_coefficient = 0.01
+	permeability_coefficient = 0.01
+	armor = list(melee = 50, bullet = 50, laser = 50, energy = 50, bomb = 50, bio = 20, rad = 15)
+	armor_thickness= 30
+	slowdown_general = 1
+	siemens_coefficient = 0.7
 
 /obj/item/clothing/suit/storage/heavyurfarmor/white
 	name = "M22H Body Armor - White Camo"
@@ -774,15 +833,19 @@
 	item_state = "h_innie_chest_white"
 	icon_state = "h_innie_chest_obj_white"
 	blood_overlay_type = "h_innie_chest_white"
-	body_parts_covered = ARMS|UPPER_TORSO|LOWER_TORSO
-	armor = list(melee = 55, bullet = 50, laser = 35, energy = 40, bomb = 40, bio = 0, rad = 0)
-	slots = 2
-	max_w_class = ITEM_SIZE_SMALL
-	armor_thickness = 30
-	slowdown_general = 0.5
-	siemens_coefficient = 0.3
-	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/weapon/flame/lighter)
-	starting_accessories = /obj/item/clothing/accessory/holster/hip
+	w_class = ITEM_SIZE_HUGE//bulky item
+	item_flags = THICKMATERIAL
+	allowed = list(/obj/item/weapon/gun/energy,/obj/item/device/radio,/obj/item/weapon/reagent_containers/spray/pepper,/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/melee/baton,/obj/item/weapon/handcuffs,/obj/item/weapon/gun/magnetic)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
+	flags_inv = 29
+	flags_inv = HIDESHOES
+	siemens_coefficient = 0
+	gas_transfer_coefficient = 0.01
+	permeability_coefficient = 0.01
+	armor = list(melee = 50, bullet = 50, laser = 50, energy = 50, bomb = 50, bio = 20, rad = 15)
+	armor_thickness= 30
+	slowdown_general = 1
+	siemens_coefficient = 0.7
 
 /obj/item/clothing/suit/armor/innie
 	name = "Salvaged Armor"
