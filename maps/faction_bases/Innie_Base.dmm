@@ -342,7 +342,7 @@
 "gD" = (/obj/effect/floor_decal/asteroid,/turf/simulated/mineral,/area/faction_base/innie)
 "gE" = (/obj/structure/closet/secure_closet/medical3,/obj/machinery/light{dir = 1},/turf/simulated/floor/tiled/white,/area/faction_base/innie)
 "gF" = (/obj/structure/closet/secure_closet/medical3,/turf/simulated/floor/tiled/white,/area/faction_base/innie)
-"gG" = (/obj/structure/table/rack,/obj/effect/floor_decal/corner/red/diagonal,/obj/item/weapon/gun/launcher/rocket/m41_ssr,/obj/item/weapon/storage/box/spnkr,/turf/simulated/floor/tiled/dark,/area/faction_base/innie)
+"gG" = (/obj/structure/table/rack,/obj/effect/floor_decal/corner/red/diagonal,/obj/item/weapon/storage/box/spnkr,/obj/item/weapon/gun/projectile/m41,/turf/simulated/floor/tiled/dark,/area/faction_base/innie)
 "gH" = (/obj/effect/floor_decal/industrial/warning{icon_state = "warning"; dir = 1},/obj/machinery/door/airlock/multi_tile/halo/blast{dir = 1},/turf/simulated/floor,/area/faction_base/innie)
 "gI" = (/obj/effect/floor_decal/industrial/warning{icon_state = "warning"; dir = 1},/turf/simulated/floor,/area/faction_base/innie)
 "gJ" = (/obj/structure/table/glass,/obj/item/weapon/storage/firstaid/fire,/obj/item/weapon/storage/firstaid/fire,/turf/simulated/floor/tiled/white,/area/faction_base/innie)

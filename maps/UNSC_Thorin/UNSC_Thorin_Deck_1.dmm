@@ -519,7 +519,7 @@
 "jY" = (/obj/machinery/alarm{dir = 1; icon_state = "alarm0"; pixel_y = -22},/turf/simulated/floor/tiled/white,/area/corvette/unscthorin/cryodorm)
 "jZ" = (/obj/machinery/light,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/tiled/white,/area/corvette/unscthorin/cryodorm)
 "ka" = (/obj/machinery/light{dir = 1},/turf/simulated/floor/tiled/dark,/area/corvette/unscthorin/Armory)
-"kb" = (/obj/structure/table/rack,/obj/item/weapon/gun/launcher/rocket/m41_ssr,/obj/item/weapon/storage/box/spnkr,/turf/simulated/floor/tiled/dark,/area/corvette/unscthorin/Armory)
+"kb" = (/obj/structure/table/rack,/obj/item/weapon/storage/box/spnkr,/obj/item/weapon/gun/projectile/m41,/turf/simulated/floor/tiled/dark,/area/corvette/unscthorin/Armory)
 "kc" = (/obj/structure/table/rack,/turf/simulated/floor/tiled/dark,/area/corvette/unscthorin/Armory)
 "kd" = (/obj/machinery/power/apc{dir = 2; name = "APC"; pixel_y = -24},/obj/structure/cable/blue,/obj/machinery/light,/turf/simulated/floor/tiled/dark,/area/corvette/unscthorin/Armory)
 "ke" = (/obj/machinery/light,/turf/simulated/floor/tiled/freezer,/area/corvette/unscthorin/crewbathroom)
