@@ -42,9 +42,9 @@
 
 	head = /obj/item/clothing/head/beret/urf
 	glasses = /obj/item/clothing/glasses/sunglasses
-	suit = /obj/item/clothing/suit/storage/heavyurfarmor/black
+	suit = /obj/item/clothing/suit/storage/lighturfarmor/black
 	uniform = /obj/item/clothing/under/urfc_jumpsuit
-	shoes = /obj/item/clothing/shoes/mediumurfboot/black
+	shoes = /obj/item/clothing/shoes/lighturfboot/black
 	l_ear = /obj/item/device/radio/headset/insurrection
 	gloves = /obj/item/clothing/gloves/thick/urf
 	pda_slot = null
