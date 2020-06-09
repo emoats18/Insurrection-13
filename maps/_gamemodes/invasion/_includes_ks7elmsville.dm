@@ -29,7 +29,9 @@
 
 	#include "../../UNSC_Bertels/includes.dm"
 
-	#include "../../URF Commando Ship/includes.dm"
+	//#include "../../URF Commando Ship/includes.dm"
+
+	#include "../../CCV_Comet/includes.dm"
 
 	#include "../../Asteroid Listening Post/includes.dm"
 
@@ -41,8 +43,6 @@
 	#include "innie_crew_spawns.dm"
 	#include "odst_crew_jobs.dm"
 
-	#include "../../civ_ships/CCV_Comet.dm"
-	#include "../../civ_ships/CCV_Comet.dmm"
 	#include "../../civ_ships/CCV_Star.dm"
 	#include "../../civ_ships/CCV_Star.dmm"
 	#include "../../civ_ships/CCV_Slow_But_Steady.dm"

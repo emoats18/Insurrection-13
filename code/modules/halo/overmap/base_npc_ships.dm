@@ -300,11 +300,6 @@
 	fore_dir = WEST
 	map_bounds = list(1,50,50,1)
 
-/datum/npc_ship/ccv_comet
-	mapfile_links = list('maps/civ_ships/CCV_Comet.dmm')
-	fore_dir = WEST
-	map_bounds = list(1,50,50,1)
-
 /datum/npc_ship/ccv_sbs
 	mapfile_links = list('maps/civ_ships/CCV_Slow_But_Steady.dmm')
 	fore_dir = WEST

@@ -57,5 +57,5 @@
 	icon_state = "base_innie"
 	faction = "Insurrection"
 	defense_type = /obj/effect/overmap/ship/npc_ship/automated_defenses/innie
-	ships_spawnnear = list("URFS Thorn","URFS Avarice","CCV Comet")
+	ships_spawnnear = list("URFS Thorn","CCV Comet")
 	base = 1
