@@ -620,7 +620,7 @@ var/world_topic_spam_protect_time = world.timeofday
 		s += "<b>[config.server_name]</b> &#8212; "
 
 	s += "<b>[station_name()]</b>";
-	s += " (<a href=\"https://discord.gg/eQhTTue\">Discord - Now 11% less shit!</a>)"
+	s += " (<a href=\"https://discord.gg/bXN5mKK\">Discord - Now 11% less shit!</a>)"
 
 	var/list/features = list()
 
