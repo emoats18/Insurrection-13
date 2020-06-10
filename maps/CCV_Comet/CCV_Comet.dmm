@@ -283,7 +283,7 @@
 "fw" = (/obj/structure/table/woodentable,/obj/random/tech_supply,/turf/simulated/floor/plating,/area/CCV_Comet)
 "fx" = (/obj/machinery/light/small,/obj/machinery/chemical_dispenser/full,/turf/simulated/floor/plating,/area/CCV_Comet)
 "fy" = (/obj/machinery/chem_master,/turf/simulated/floor/plating,/area/CCV_Comet)
-"fz" = (/obj/machinery/door/airlock/halo,/obj/machinery/door/firedoor,/obj/machinery/door/airlock/halo{req_access = list(252)},/obj/machinery/door/firedoor/border_only,/turf/simulated/floor/plating,/area/CCV_Comet)
+"fz" = (/obj/machinery/door/firedoor,/obj/machinery/door/airlock/halo{req_access = list(252)},/turf/simulated/floor/plating,/area/CCV_Comet)
 "fA" = (/obj/structure/window/reinforced/treated,/obj/structure/window/reinforced/treated,/turf/simulated/floor/plating,/area/CCV_Comet)
 "fB" = (/obj/machinery/embedded_controller/radio/airlock/airlock_controller{tag_airpump = "solar_xeno_pump"; tag_exterior_door = "solar_xeno_outer"; frequency = 1379; id_tag = "solar_xeno_airlock"; tag_interior_door = "solar_xeno_inner"; pixel_x = 25; req_access = list(13); tag_chamber_sensor = "solar_xeno_sensor"},/obj/machinery/airlock_sensor{frequency = 1379; id_tag = "solar_xeno_sensor"; pixel_x = 25; pixel_y = 12},/obj/machinery/atmospherics/unary/vent_pump/high_volume{dir = 1; frequency = 1379; id_tag = "solar_xeno_pump"},/obj/structure/cable,/turf/simulated/floor/plating,/area/CCV_Comet)
 "fC" = (/obj/docking_umbilical/south{name = "CCV Comet Bridge B"},/turf/simulated/floor/plating,/area/CCV_Comet)
