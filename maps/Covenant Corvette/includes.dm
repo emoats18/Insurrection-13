@@ -1,6 +1,6 @@
-//#include "areas.dm"
-//#include "overmap.dm"
+#include "areas.dm"
+#include "overmap.dm"
 #include "jobs.dm"
 #include "outfits.dm"
 
-//#include "DAV_Vindicative_Infraction.dmm"
+#include "DAV_Vindicative_Infraction.dmm"

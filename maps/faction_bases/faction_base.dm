@@ -5,7 +5,7 @@
 	icon = 'code/modules/halo/icons/overmap/faction_bases.dmi'
 	faction = "faction_base" //This should be changed for each faction base overmap object.
 	var/do_ship_relocates = 1
-	var/spawn_defenses_amount = 4
+	var/spawn_defenses_amount = 2
 	var/spawn_defenses_maxrange = 2
 	var/list/ships_spawnnear = list() //Exact typepath of the ship
 	var/obj/effect/overmap/ship/npc_ship/automated_defenses/defense_type = /obj/effect/overmap/ship/npc_ship/automated_defenses
