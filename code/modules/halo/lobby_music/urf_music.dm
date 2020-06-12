@@ -16,3 +16,9 @@
 	title = "Big Iron"
 	album = "Johnny Reno"
 	song = 'code/modules/halo/lobby_music/big_iron.ogg'
+
+/lobby_music/test_and_recognise
+	artist = "Seekae"
+	title = "Test & Recognise (Flume Re-Work)"
+	album = "Test & Recognise (Remixes)"
+	song = 'code/modules/halo/lobby_music/test-and-recognise.ogg'
