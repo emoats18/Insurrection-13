@@ -41,15 +41,18 @@
 		DEFAULT_SPAWNPOINT_ID,\
 		"Innie Base Spawns",\
 		"UNSC Base Spawns",\
+		"Sangheili Spawn",\
+		"Kig-Yar Spawn",\
+		"Unggoy Spawn",\
 		"Civilian Ship Crew",\
 		"Civ Ship Cap Crew",\
 		"Medical Ship Crew",\
 		"Medical Ship Cap Crew",\
 		"Medical Ship Crew CMO",\
-		"Covenant Base Spawns",\
 		"Research Facility Spawn",\
 		"Research Facility Director Spawn",\
 		"Research Facility Security Spawn")
+
 
 	default_spawn = DEFAULT_SPAWNPOINT_ID
 

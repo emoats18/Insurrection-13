@@ -37,7 +37,9 @@
 
 	#include "../../UNSC_Thorin/includes.dm"
 
-	#include "../../Covenant Corvette/includes.dm"
+	#include "../../kig_yar_pirates/includes.dm"
+
+	//#include "../../Covenant Corvette/includes.dm"
 
 	#include "innie_crew_jobs.dm"
 	#include "innie_crew_spawns.dm"

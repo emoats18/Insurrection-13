@@ -4,6 +4,7 @@
 	#include "../../faction_bases/faction_base.dm"
 	#include "../../faction_bases/faction_spawns.dm"
 	#include "../../faction_bases/faction_base.dm"
+
 	#include "../../civ_ships/civ_crew_spawns.dm"
 	#include "../../civ_ships/medic_crew_spawns.dm"
 	#include "../../civ_ships/civ_crew_jobs.dm"
@@ -36,11 +37,14 @@
 
 	#include "../../UNSC_Thorin/includes.dm"
 
-	#include "../../Covenant Corvette/includes.dm"
+	#include "../../kig_yar_pirates/includes.dm"
 
 	#include "innie_crew_jobs.dm"
 	#include "innie_crew_spawns.dm"
 	#include "odst_crew_jobs.dm"
+	#include "cov_spawns.dm"
+	#include "cov_jobs.dm"
+	#include "cov_outfits.dm"
 
 
 	//#include "../../civ_ships/CCV_Comet.dm"

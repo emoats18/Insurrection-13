@@ -1538,7 +1538,6 @@
 #include "code\modules\halo\machinery\covenant\lights.dm"
 #include "code\modules\halo\machinery\medical\thermopod.dm"
 #include "code\modules\halo\misc\admin_covenant_strike_team.dm"
-#include "code\modules\halo\misc\admin_start_doomguy.dm"
 #include "code\modules\halo\misc\admin_start_flood_attack.dm"
 #include "code\modules\halo\misc\chasm.dm"
 #include "code\modules\halo\misc\co_ord_console.dm"
