@@ -2,8 +2,9 @@
 /datum/objective
 	var/win_points = 0
 	var/lose_points = 0
+
 	var/short_text = "NA"
-	var/find_specific_target = 0	//flag to do extra processing in gamemode/pre_setup
+	var/find_specific_target = 1	//flag to do extra processing in gamemode/pre_setup
 	var/slipspace_affected = 0		//flag to lock in the result when a ship goes to slipspace
 	var/override = 0
 

@@ -77,6 +77,17 @@
 	//faction_whitelist = "Covenant"
 	whitelisted_species = list(/datum/species/sangheili)
 
+/datum/job/covenant/sangheili_specops
+	title = "Sangheili - Specops"
+	total_positions = 2
+	spawn_positions = 2
+	selection_color = "#800080"
+	outfit_type = /decl/hierarchy/outfit/sangheili/specops
+	access = list(240,250)
+	spawnpoint_override = "Sangheili Spawn"
+	//faction_whitelist = "Covenant"
+	whitelisted_species = list(/datum/species/sangheili)
+
 /datum/job/covenant/skirmminor
 	title = "T-Voan - Minor"
 	total_positions = 2

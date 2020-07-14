@@ -2,24 +2,23 @@
 #include "objectives.dm"
 #include "oni_cryopod.dm"
 
-/datum/game_mode/invasion
+/datum/game_mode/insurrection
 	name = "Insurrection"
-	config_tag = "invasion"
+	config_tag = "insurrection"
 	round_description = "In an outer colony on the edge of human space, an insurrection is brewing."
 	extended_round_description = "In an outer colony on the edge of human space, an insurrection is brewing."
 
 	//uncomment this later
 	//required_players = 10
-	factions = list(/datum/faction/unsc, /datum/faction/insurrection)//, /datum/faction/covenant)
+	factions = list(/datum/faction/unsc, /datum/faction/insurrection) //datum/faction/covenant)
 
-	var/faction_safe_time = 10 MINUTES
-	var/faction_safe_duration = 10 MINUTES
+	var/faction_safe_time = 5 MINUTES
+	var/faction_safe_duration = 5 MINUTES
 	var/safe_expire_warning = 0
-
-	//var/obj/effect/overmap/ship/cov_ship
-	//var/list/cov_ship_areas = list()
 	var/list/unsc_base_areas = list()
 	var/obj/effect/overmap/ship/unsc_ship
+	var/list/innie_base_areas = list()
+	var/obj/effect/overmap/ship/innie_ship
 	var/obj/effect/overmap/human_colony
 
 	var/list/objectives_specific_target = list()
@@ -28,7 +27,7 @@
 
 	//var/covenant_ship_slipspaced = 0
 
-/datum/game_mode/invasion/New()
+/datum/game_mode/insurrection/New()
 	. = ..()
 
 	//setup factions
@@ -40,17 +39,11 @@
 			factions_by_name[new_faction.name] = new_faction
 
 	//setup covenant objectives
-	//var/datum/faction/covenant/C = locate() in factions
-	//if(C)
-		//var/list/objective_types = list(\
-			//datum/objective/protect_cov_ship,\
-			//datum/objective/protect/protect_cov_leader,\
-			//datum/objective/glass_colony,\
-			//datum/objective/steal_ai,\
-			//datum/objective/steal_nav_data,\
-			///datum/objective/destroy_unsc_ship,
-			//datum/objective/retrieve_artifact)
-		//setup_faction_objectives(C, objective_types)
+	/*var/datum/faction/covenant/C = locate() in factions
+	if(C)
+		var/list/objective_types = list(\
+			/datum/objective/capture_humans)
+		setup_faction_objectives(C, objective_types)*/
 
 	//setup unsc objectives
 	var/datum/faction/unsc/U = locate() in factions
@@ -58,8 +51,8 @@
 		var/list/objective_types = list(\
 			/datum/objective/protect_unsc_ship,\
 			/datum/objective/protect/protect_unsc_leader,\
-			/datum/objective/capture_innies,\
-			/datum/objective/protect_colony)
+			/datum/objective/destroy_innie_ship,\
+			/datum/objective/capture_innies)
 		setup_faction_objectives(U, objective_types)
 
 	//setup innie objectives
@@ -67,22 +60,18 @@
 	if(I)
 		var/list/objective_types = list(\
 			/datum/objective/protect/protect_innie_leader,\
-			/datum/objective/destroy_unsc_ship/innie,\
-			/datum/objective/assassinate/kill_unsc_leader,\
-			///datum/objective/recruit_pirates,
-			///datum/objective/recruit_scientists,
-			/datum/objective/protect_colony/innie)
-			///datum/objective/takeover_colony)
+			/datum/objective/destroy_unsc_ship,\
+			/datum/objective/assassinate/kill_unsc_leader)
 		setup_faction_objectives(I, objective_types)
 
-/datum/game_mode/invasion/pre_setup()
+/datum/game_mode/insurrection/pre_setup()
 	. = ..()
 	//**** hard code some values which we will locate dynamically later ****//
-	//find_cov_ship()
-	//find_cov_ship_areas()
 	find_unsc_ship()
 	find_unsc_base_areas()
-	//find_human_colony()
+	find_innie_ship()
+	find_innie_base_areas()
+	find_human_colony()
 	//**** finish hard codes. remove these later ****//
 
 	//setup a couple of other objectives
@@ -90,7 +79,7 @@
 		if(objective.find_target_specific())
 			objectives_specific_target -= objective
 
-/datum/game_mode/invasion/handle_latejoin(var/mob/living/carbon/human/character)
+/datum/game_mode/insurrection/handle_latejoin(var/mob/living/carbon/human/character)
 	var/list/successful = list()
 	for(var/datum/objective/objective in objectives_specific_target)
 		if(objective.find_target_specific(character.mind))
@@ -99,31 +88,33 @@
 	objectives_specific_target -= successful
 	return 1
 
-//datum/game_mode/invasion/proc/find_cov_ship()
-	//var/datum/faction/covenant/C = factions_by_name["Covenant"]
-	//cov_ship = C.get_flagship()
-
-//datum/game_mode/invasion/proc/find_cov_ship_areas()
-	//for(var/area_type in typesof(cov_ship.parent_area_type))
-		//var/area/cur_area = locate(area_type) in world
-		//cov_ship_areas.Add(cur_area)
-
-/datum/game_mode/invasion/proc/find_unsc_ship()
+/datum/game_mode/insurrection/proc/find_unsc_ship()
 	var/datum/faction/unsc/U = factions_by_name["UNSC"]
 	unsc_ship = U.get_flagship()
 
-/datum/game_mode/invasion/proc/find_unsc_base_areas()
+/datum/game_mode/insurrection/proc/find_unsc_base_areas()
 	var/datum/faction/unsc/U = factions_by_name["UNSC"]
 	var/obj/effect/overmap/unsc_base = U.get_base()
 	for(var/area_type in typesof(unsc_base.parent_area_type))
 		var/area/cur_area = locate(area_type) in world
 		unsc_base_areas.Add(cur_area)
 
-/datum/game_mode/invasion/proc/find_human_colony()
+/datum/game_mode/insurrection/proc/find_innie_ship()
+	var/datum/faction/insurrection/I = factions_by_name["Insurrection"]
+	innie_ship = I.get_flagship()
+
+/datum/game_mode/insurrection/proc/find_innie_base_areas()
+	var/datum/faction/insurrection/I = factions_by_name["Insurrection"]
+	var/obj/effect/overmap/innie_base = I.get_base()
+	for(var/area_type in typesof(innie_base.parent_area_type))
+		var/area/cur_area = locate(area_type) in world
+		innie_base_areas.Add(cur_area)
+
+/datum/game_mode/insurrection/proc/find_human_colony()
 	var/datum/faction/human_civ/H = factions_by_name["Civilian"]
 	human_colony = H.get_base()
 
-/datum/game_mode/invasion/proc/setup_faction_objectives(var/datum/faction/faction, var/list/objective_types)
+/datum/game_mode/insurrection/proc/setup_faction_objectives(var/datum/faction/faction, var/list/objective_types)
 	for(var/objective_type in objective_types)
 		var/datum/objective/objective = new objective_type()
 		faction.all_objectives.Add(objective)
@@ -134,30 +125,25 @@
 			objectives_specific_target.Add(objective)
 
 		//these objectives are affected when a ship goes into slipspace and despawns
-		if(objective.slipspace_affected)
-			objectives_slipspace_affected.Add(objective)
+		//if(objective.slipspace_affected)
+			//objectives_slipspace_affected.Add(objective)
 
-/datum/game_mode/invasion/post_setup(var/announce = 0)
+/datum/game_mode/insurrection/post_setup(var/announce = 0)
 	. = ..()
 	faction_safe_time = world.time + faction_safe_duration
 
-/datum/game_mode/invasion/check_finished()
+/datum/game_mode/insurrection/check_finished()
 
 	//if 2 or more end conditions are met, end the game
 	round_end_reasons = list()
 
-	//the cov ship has been destroyed or gone to slipspace
-	//if(!cov_ship)
-		//if(covenant_ship_slipspaced)
-			//round_end_reasons += "the Covenant ship has gone to slipspace and left the system"
-			//var/datum/faction/covenant/C = locate() in factions
-			//C.ignore_players_dead = 1
-		//else
-			//round_end_reasons += "the Covenant ship has been destroyed"
-
 	//the UNSC ship has been destroyed
 	if(!unsc_ship)
 		round_end_reasons += "the UNSC ship has been destroyed"
+
+	//the URF ship has been destroyed
+	if(!innie_ship)
+		round_end_reasons += "the URF ship has been destroyed"
 
 	//the colony has been destroyed (nuked/glassed)
 	if(human_colony)
@@ -194,7 +180,7 @@
 
 	return (end_round_triggers >= 2 || evacuation_controller.round_over())
 
-/datum/game_mode/invasion/declare_completion()
+/datum/game_mode/insurrection/declare_completion()
 
 	var/announce_text = ""
 
@@ -310,7 +296,7 @@
 
 	return 0
 
-/datum/game_mode/invasion/handle_mob_death(var/mob/M, var/unsc_capture = 0)
+/datum/game_mode/insurrection/handle_mob_death(var/mob/M, var/unsc_capture = 0)
 	. = ..()
 
 	if(M.mind.assigned_role in list("Insurrectionist","Insurrectionist Commander") || M.mind.faction == "Insurrectionist")
@@ -329,7 +315,7 @@
 				F.living_minds -= M.mind
 				break
 
-//datum/game_mode/invasion/handle_slipspace_jump(var/obj/effect/overmap/ship/ship)
+//datum/game_mode/insurrection/handle_slipspace_jump(var/obj/effect/overmap/ship/ship)
 	//if(ship.faction == "Covenant")
 		//record a round end condition
 		//covenant_ship_slipspaced = 1
