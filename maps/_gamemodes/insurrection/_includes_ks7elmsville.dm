@@ -19,10 +19,11 @@
 
 	#include "../../Exoplanet Research/includes.dm"
 
-	#include "../../geminus_city/geminus_city.dm"
-	#include "jobdefs_geminus.dm"
+	//#include "../../geminus_city/geminus_city.dm"
+	//#include "jobdefs_geminus.dm"
 
-	//#include "../../ks7_elmsville/ks7_elmsville.dm"
+	#include "../../ks7_elmsville/ks7_elmsville.dm"
+	#include "jobdefs_ks7elmsville.dm"
 
 	#include "../../Admin Planet/includes.dm"
 
@@ -36,15 +37,14 @@
 
 	#include "../../UNSC_Thorin/includes.dm"
 
-	#include "../../Covenant Corvette/includes.dm"
+	#include "../../kig_yar_pirates/includes.dm"
+
+	//#include "../../Covenant Corvette/includes.dm"
 
 	#include "innie_crew_jobs.dm"
 	#include "innie_crew_spawns.dm"
 	#include "odst_crew_jobs.dm"
 
-
-	//#include "../../civ_ships/CCV_Comet.dm"
-	//#include "../../civ_ships/CCV_Comet.dmm"
 	#include "../../civ_ships/CCV_Star.dm"
 	#include "../../civ_ships/CCV_Star.dmm"
 	#include "../../civ_ships/CCV_Slow_But_Steady.dm"
@@ -55,15 +55,15 @@
 	#include "overall_outfits.dm"
 	#include "mapdef.dm"
 
-	//#include "../../../code/modules/halo/lobby_music/odst_music.dm"
-	//#include "../../../code/modules/halo/lobby_music/halo_music.dm"
-	#include "../../../code/modules/halo/lobby_music/urf_music.dm"
+	#include "../../../code/modules/halo/lobby_music/odst_music.dm"
+	#include "../../../code/modules/halo/lobby_music/halo_music.dm"
+
 	#include "gamemode.dm"
 
-	#define using_map_DATUM /datum/map/geminus_city
+	#define using_map_DATUM /datum/map/ks7_elmsville
 
 #elif !defined(MAP_OVERRIDE)
 
-	#warn A map has already been included, ignoring Invasion: Geminus City
+	#warn A map has already been included, ignoring Invasion: KS7 Elmsville
 
 #endif

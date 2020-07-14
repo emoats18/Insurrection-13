@@ -1,7 +1,7 @@
 
 /obj/item/clothing/under/urfc_jumpsuit
 	name = "URF Commando uniform"
-	desc = "Standard issue URF Commando uniform, more badass than that, you die."
+	desc = "Standard issue URF Commando uniform. You won't find a uniform more badass than this."
 	icon = 'code/modules/halo/clothing/urf_commando.dmi'
 	icon_override = 'code/modules/halo/clothing/urf_commando.dmi'
 	icon_state = "commando_uniform"
@@ -36,7 +36,7 @@
 
 /obj/item/clothing/suit/armor/special/urfc
 	name = "URFC Rifleman Armour"
-	desc = "Somewhat expensive and hand crafted, this armor is the pinnacle of the work force of the URF and it's many workers. Filled with pouches and storage compartments, while still keeping a scary amount of both mobility and protection. An ideal collage of the strengths of the URF, but with the added protection found only in high tier UNSC equipment. It's quite comfy, probably won't last long in space."
+	desc = "Somewhat expensive and hand crafted, this armor is the pinnacle of the work force of the URF and it's many workers. Filled with pouches and storage compartments, while still keeping a scary amount of both mobility and protection. An ideal collage of the strengths of the URF, but with the added protection found only in high tier UNSC equipment. It's quite comfy, and is space proof."
 	icon = 'code/modules/halo/clothing/urf_commando.dmi'
 	item_state = "rifleman_a_worn"
 	icon_state = "rifleman_a_obj"

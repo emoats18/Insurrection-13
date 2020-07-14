@@ -1,6 +1,6 @@
 
 /area/kigyar_pirate
-	name = "Kig-Yar Pirate Vessel"
+	name = "DAV Ratty Riot"
 
 /area/kigyar_pirate/pulse_lasers
-	name = "Kig Yar Pirate Vessel - Pulse Lasers"
+	name = "DAV Ratty Riot - Pulse Lasers"

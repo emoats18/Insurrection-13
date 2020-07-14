@@ -18,7 +18,7 @@
 	var/explodedesc = "A spraypainted image of a skull adorns this slowly ticking bomb."
 	var/activeoverlay = "MFDD Armed Screen"
 	var/strength=1 //The size of the explosion
-	var/free_explode = 0
+	var/free_explode = 1
 
 /obj/payload/attack_hand(var/mob/living/user)
 	if(!exploding)
