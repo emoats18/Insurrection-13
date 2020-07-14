@@ -27,31 +27,26 @@
 		/datum/job/ship_cap_civ,\
 		/datum/job/ship_crew_medic,\
 		/datum/job/ship_cap_medic,\
-		/datum/job/ship_cmo_medic)
-		//datum/job/covenant/sangheili_minor,\
-		//datum/job/covenant/sangheili_major,\
-		//datum/job/covenant/sangheili_honour_guard,\
-		//datum/job/covenant/sangheili_shipmaster,\
-		//datum/job/covenant/lesser_prophet,\
-		//datum/job/covenant/kigyarminor,\
-		//datum/job/covenant/kigyarmajor,\
-		//datum/job/covenant/kigyarcorvette/captain,\
-		//datum/job/covenant/unggoy_minor,\
-		//datum/job/covenant/unggoy_major,\
-		//datum/job/covenant/skirmminor,\
-		//datum/job/covenant/skirmmajor,\
-		//datum/job/covenant/skirmmurmillo)
+		/datum/job/ship_cmo_medic,\
+		/datum/job/covenant/sangheili_specops,\
+		/datum/job/covenant/sangheili_shipmaster,\
+		/datum/job/covenant/kigyarminor,\
+		/datum/job/covenant/kigyarmajor,\
+		/datum/job/covenant/unggoy_minor,\
+		/datum/job/covenant/unggoy_major)
 
 	allowed_spawns = list(\
 		DEFAULT_SPAWNPOINT_ID,\
 		"Innie Base Spawns",\
 		"UNSC Base Spawns",\
+		"Sangheili Spawn",\
+		"Kig-Yar Spawn",\
+		"Unggoy Spawn",\
 		"Civilian Ship Crew",\
 		"Civ Ship Cap Crew",\
 		"Medical Ship Crew",\
 		"Medical Ship Cap Crew",\
 		"Medical Ship Crew CMO",\
-		"Covenant Base Spawns",\
 		"Research Facility Spawn",\
 		"Research Facility Director Spawn",\
 		"Research Facility Security Spawn")
@@ -61,7 +56,7 @@
 	species_to_job_whitelist = list(\
 		/datum/species/kig_yar = list(/datum/job/covenant/kigyarminor,/datum/job/covenant/kigyarmajor,/datum/job/covenant/kigyarcorvette/captain),\
 		/datum/species/unggoy = list(/datum/job/covenant/unggoy_minor,/datum/job/covenant/unggoy_major),\
-		/datum/species/sangheili = list(/datum/job/covenant/sangheili_minor,/datum/job/covenant/sangheili_major,/datum/job/covenant/sangheili_honour_guard,/datum/job/covenant/sangheili_shipmaster),\
+		/datum/species/sangheili = list(/datum/job/covenant/sangheili_minor,/datum/job/covenant/sangheili_specops,/datum/job/covenant/sangheili_major,/datum/job/covenant/sangheili_honour_guard,/datum/job/covenant/sangheili_shipmaster),\
 		/datum/species/kig_yar_skirmisher = list(/datum/job/covenant/skirmminor,/datum/job/covenant/skirmmajor,/datum/job/covenant/skirmmurmillo,/datum/job/covenant/skirmcommando),\
 		/datum/species/spartan = list(),\
 		/datum/species/brutes = list(),\

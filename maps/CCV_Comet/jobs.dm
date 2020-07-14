@@ -5,14 +5,12 @@
 	spawnpoint_override = "URF Commando"
 	latejoin_at_spawnpoints = 1
 	outfit_type = /decl/hierarchy/outfit/job/URF_commando
-	alt_titles = list("Recruit",\
-	"Velites",\
-	"Hastari",\
-	"Principes",\
-	"Triarii",\
-	"Decanus",\
-	"Tessearius")
-
+	alt_titles = list("URF Commando Medic",\
+	"URF Commando Machine Gunner",\
+	"URF Commando Engineer",\
+	"URF Commando Marksman",\
+	"URF Commando Breacher",\
+	"URF Commando Sniper")
 	total_positions = 8
 	spawn_positions = 8
 	selection_color = "#ff0000"
@@ -25,12 +23,6 @@
 	spawnpoint_override = "URF Commando Officer"
 	latejoin_at_spawnpoints = 1
 	outfit_type = /decl/hierarchy/outfit/job/URF_commando_officer
-	alt_titles = list("Optio",\
-	"Centurion",\
-	"Tribune",\
-	"Legio",\
-	"Legate")
-
 	total_positions = 2
 	spawn_positions = 1
 	selection_color = "#ff0000"

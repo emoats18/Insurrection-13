@@ -252,24 +252,17 @@
 //CORE PAYLOADS//
 /obj/payload/slipspace_core
 	name = "Slipspace Core"
-	desc = "The core of a slipspace device, detached and armed. Slipspace cores are unstable and cannot be disarmed."
-	explodetype = /datum/explosion/slipspace_core
-	seconds_to_explode = 300 //5 minutes
-
-/obj/payload/slipspace_core/Initialize()
-	. = ..()
-	explode_at = world.time + seconds_to_explode SECONDS
-	exploding = 1
-	GLOB.processing_objects += src
-
-/obj/payload/slipspace_core/attack_hand(var/attacker)
-	to_chat(attacker,"<span class = 'danger'>[src] is armed and beeping. </span>")
-
-/datum/explosion/slipspace_core/New(var/obj/payload/b)
-	if(config.oni_discord)
-		message2discord(config.oni_discord, "Alert: slipspace core detonation detected. [b.name] @ ([b.loc.x],[b.loc.y],[b.loc.z])")
-	explosion(100, -1, -1, -1, 255)
-	qdel(src)
+	desc = "The core of a slipspace device, detached and armed."
+	density = 1
+	explodetype = /datum/explosion/nuclearexplosion
+	exploding
+	explode_at
+	seconds_to_explode = 240
+	arm_time = 3 //Time in seconds to arm the bomb.
+	seconds_to_disarm = 60
+	explodedesc = "Oopsie... I guess you done fucked up, better disarm it!"
+	strength=1.5 //The size of the explosion
+	free_explode = 1
 
 /obj/payload/slipspace_core/cov
 	icon = 'code/modules/halo/icons/machinery/covenant/slipspace_drive.dmi'
