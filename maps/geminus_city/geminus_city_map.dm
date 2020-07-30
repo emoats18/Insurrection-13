@@ -9,7 +9,7 @@
 	admin_levels = list()
 	accessible_z_levels = list()
 	//lobby_icon = 'maps/example/example_lobby.dmi'
-	lobby_icon = 'code/modules/halo/splashworks/title6.jpg'
+	lobby_icon = 'emoneygang.dmi'
 	id_hud_icons = 'maps/geminus_city/geminus_hud_icons.dmi'
 	//id_hud_icons = 'maps/UNSC_Heaven_Above/frigate_hud_icons.dmi'
 
